@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Категории</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+	
+
+	<!-- Load CSS Start -->
+	<script>loadCSS( "css/fonts.min.css", false, "all" );</script>
+	<script>loadCSS( "css/normalize.css", false, "all" );</script>
+	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+	<!-- Load CSS End -->
+
+	<!-- Load CSS Compilled without JS -->
+	<noscript>
+		<link rel="stylesheet" href="css/normalize.css" >
+		<link rel="stylesheet" href="css/fonts.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+	</noscript>
+
+</head>
+
+<body>
+
+	<!-- header -->
+	<section class="category">
+		<div class="high_navigation">
+			<div class="container">
+				<ul>
+					<li><a href="">Главная</a></li>
+					<li>> <a href="">Каталог</a></li>
+					<li>> Керамическая черепица</li>
+				</ul>
+			</div>
+		</div>
+		<div class="category_content">
+			<div class="clearfix container">
+				<div class="category-navigation">
+					<div class="sale-checkbox">
+						<input id="salve" type="checkbox">
+						<label for="sale">Только со скидкой</label>
+					</div>
+					<p class="category-name">Цена</p>
+					<div class="from-to-block">
+						<label for="from">от</label>
+						<input id="from" type="text" placeholder="200">
+						<label for="to">до</label>
+						<input id="to" type="text" placeholder="3000">
+						<label for="to">руб.</label>
+					</div>
+					<div class="slider-block">
+						<i class="img-slider"><img src="img/category-slider.png" alt=""></i>
+					</div>
+					<p class="category-name">Производитель</p>
+					<div class="checkbox_block">
+						<div class="checkbox-item">
+							<input id="borja" type="checkbox">
+							<label for="borja">Tejas Borja</label>
+						</div>
+						<div class="checkbox-item">
+							<input id="braas" type="checkbox">
+							<label for="braas">Braas</label>
+						</div>
+						<div class="checkbox-item">
+							<input id="roben" type="checkbox">
+							<label for="roben">Roben</label>
+						</div>
+					</div>
+					<p class="category-name">Оттенок</p>
+					<div class="checkbox_block">
+						<div class="checkbox-item">
+							<input id="brown" type="checkbox">
+							<label for="brown">Коричневый</label>
+						</div>
+						<div class="checkbox-item">
+							<input id="red" type="checkbox">
+							<label for="red">Натуральный красный</label>
+						</div>
+						<div class="checkbox-item">
+							<input id="cherry" type="checkbox">
+							<label for="cherry">Вишневый</label>
+						</div>
+						<div class="checkbox-item">
+							<input id="grey" type="checkbox">
+							<label for="grey">Серый</label>
+						</div>
+						<div class="checkbox-item">
+							<input id="green" type="checkbox">
+							<label for="green">Зеленый</label>
+						</div>
+						<div class="checkbox-item">
+							<input id="black" type="checkbox">
+							<label for="black">Черный</label>
+						</div>
+						<div class="checkbox-item">
+							<input id="blue" type="checkbox">
+							<label for="blue">Синий</label>
+						</div>
+						<div class="checkbox-item">
+							<input id="antique" type="checkbox">
+							<label for="antique">Антик</label>
+						</div>
+					</div>
+					<a href="" class="profitable-proposition-link"><img src="img/profitable-proposition.png" alt=""></a>
+					<div class="calculation_block">
+						<img src="img/calculation-img.jpg" alt="" class="calculation-img">
+						<p class="calculation-name">Калькулятор кровли</p>
+						<a href="" class="calculation-link">Расчитать кровлю онлайн</a>
+					</div>
+				</div>
+				<div class="category-items">
+					<p class="main-inscription">
+						Керамическая черепица
+					</p>
+					<div class="sort-block clearfix">
+						<p class="sort-text">Сортировать по:</p>
+						<p class="sort-name active">По популярности</p>
+						<p class="sort-name">По цене</p>
+						<div class="page-block">
+							<a href="" class="active">1</a>
+							<a href="">2</a>
+							<a href="">3</a>
+							<a href="">...</a>
+							<a href=""><img src="img/arrow-sort-link.jpg" alt=""></a>
+						</div>
+					</div>
+					<div class="catalog-sort clearfix">
+						<div class="item_block__info">
+							<div class="item_block__info-img">
+								<img src="img/item-info.png" alt="">
+								<div class="img-hover">
+							</div>
+							</div>
+							<div class="item_block__info-text">
+								<p class="info-main">Sea Wave (Антик)</p>
+								<p class="info-content">Размеры........... <span>420×334 мм</span></p>
+								<p class="info-content">Вес черепицы........... <span>4,3 кг</span></p>
+								<p class="info-content">Расход на м<sup>2</sup>......... <span>от 9,5 шт</span></p>
+								<div class="buy-block clearfix">
+									<img src="img/btn-buy.png" alt="">
+									<p class="buy-price">283 руб/м<sup>2</sup></p>
+								</div>
+							</div>
+						</div>
+						<div class="item_block__info">
+							<div class="item_block__info-img">
+								<img src="img/item-info.png" alt="">
+								<div class="img-hover">
+							</div>
+							</div>
+							<div class="item_block__info-text">
+								<p class="info-main">Sea Wave (Антик)</p>
+								<p class="info-content">Размеры........... <span>420×334 мм</span></p>
+								<p class="info-content">Вес черепицы........... <span>4,3 кг</span></p>
+								<p class="info-content">Расход на м<sup>2</sup>......... <span>от 9,5 шт</span></p>
+								<div class="buy-block clearfix">
+									<img src="img/btn-buy.png" alt="">
+									<p class="buy-price">283 руб/м<sup>2</sup></p>
+								</div>
+							</div>
+						</div>
+						<div class="item_block__info">
+							<div class="item_block__info-img">
+								<img src="img/item-info.png" alt="">
+								<div class="img-hover">
+							</div>
+							</div>
+							<div class="item_block__info-text">
+								<p class="info-main">Sea Wave (Антик)</p>
+								<p class="info-content">Размеры........... <span>420×334 мм</span></p>
+								<p class="info-content">Вес черепицы........... <span>4,3 кг</span></p>
+								<p class="info-content">Расход на м<sup>2</sup>......... <span>от 9,5 шт</span></p>
+								<div class="buy-block clearfix">
+									<img src="img/btn-buy.png" alt="">
+									<p class="buy-price">283 руб/м<sup>2</sup></p>
+								</div>
+							</div>
+						</div>
+										<div class="item_block__info">
+							<div class="item_block__info-img">
+								<img src="img/item-info.png" alt="">
+								<div class="img-hover">
+							</div>
+							</div>
+							<div class="item_block__info-text">
+								<p class="info-main">Sea Wave (Антик)</p>
+								<p class="info-content">Размеры........... <span>420×334 мм</span></p>
+								<p class="info-content">Вес черепицы........... <span>4,3 кг</span></p>
+								<p class="info-content">Расход на м<sup>2</sup>......... <span>от 9,5 шт</span></p>
+								<div class="buy-block clearfix">
+									<img src="img/btn-buy.png" alt="">
+									<p class="buy-price">283 руб/м<sup>2</sup></p>
+								</div>
+							</div>
+						</div>
+						<div class="item_block__info">
+							<div class="item_block__info-img">
+								<img src="img/item-info.png" alt="">
+								<div class="img-hover">
+							</div>
+							</div>
+							<div class="item_block__info-text">
+								<p class="info-main">Sea Wave (Антик)</p>
+								<p class="info-content">Размеры........... <span>420×334 мм</span></p>
+								<p class="info-content">Вес черепицы........... <span>4,3 кг</span></p>
+								<p class="info-content">Расход на м<sup>2</sup>......... <span>от 9,5 шт</span></p>
+								<div class="buy-block clearfix">
+									<img src="img/btn-buy.png" alt="">
+									<p class="buy-price">283 руб/м<sup>2</sup></p>
+								</div>
+							</div>
+						</div>
+						<div class="item_block__info">
+							<div class="item_block__info-img">
+								<img src="img/item-info.png" alt="">
+								<div class="img-hover">
+							</div>
+							</div>
+							<div class="item_block__info-text">
+								<p class="info-main">Sea Wave (Антик)</p>
+								<p class="info-content">Размеры........... <span>420×334 мм</span></p>
+								<p class="info-content">Вес черепицы........... <span>4,3 кг</span></p>
+								<p class="info-content">Расход на м<sup>2</sup>......... <span>от 9,5 шт</span></p>
+								<div class="buy-block clearfix">
+									<img src="img/btn-buy.png" alt="">
+									<p class="buy-price">283 руб/м<sup>2</sup></p>
+								</div>
+							</div>
+						</div>
+										<div class="item_block__info">
+							<div class="item_block__info-img">
+								<img src="img/item-info.png" alt="">
+								<div class="img-hover">
+							</div>
+							</div>
+							<div class="item_block__info-text">
+								<p class="info-main">Sea Wave (Антик)</p>
+								<p class="info-content">Размеры........... <span>420×334 мм</span></p>
+								<p class="info-content">Вес черепицы........... <span>4,3 кг</span></p>
+								<p class="info-content">Расход на м<sup>2</sup>......... <span>от 9,5 шт</span></p>
+								<div class="buy-block clearfix">
+									<img src="img/btn-buy.png" alt="">
+									<p class="buy-price">283 руб/м<sup>2</sup></p>
+								</div>
+							</div>
+						</div>
+						<div class="item_block__info">
+							<div class="item_block__info-img">
+								<img src="img/item-info.png" alt="">
+								<div class="img-hover">
+							</div>
+							</div>
+							<div class="item_block__info-text">
+								<p class="info-main">Sea Wave (Антик)</p>
+								<p class="info-content">Размеры........... <span>420×334 мм</span></p>
+								<p class="info-content">Вес черепицы........... <span>4,3 кг</span></p>
+								<p class="info-content">Расход на м<sup>2</sup>......... <span>от 9,5 шт</span></p>
+								<div class="buy-block clearfix">
+									<img src="img/btn-buy.png" alt="">
+									<p class="buy-price">283 руб/м<sup>2</sup></p>
+								</div>
+							</div>
+						</div>
+						<div class="item_block__info">
+							<div class="item_block__info-img">
+								<img src="img/item-info.png" alt="">
+								<div class="img-hover">
+							</div>
+							</div>
+							<div class="item_block__info-text">
+								<p class="info-main">Sea Wave (Антик)</p>
+								<p class="info-content">Размеры........... <span>420×334 мм</span></p>
+								<p class="info-content">Вес черепицы........... <span>4,3 кг</span></p>
+								<p class="info-content">Расход на м<sup>2</sup>......... <span>от 9,5 шт</span></p>
+								<div class="buy-block clearfix">
+									<img src="img/btn-buy.png" alt="">
+									<p class="buy-price">283 руб/м<sup>2</sup></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="more-block">
+						<a href="" class="btn-more">Показать еще 10 товаров</a>
+					</div>
+					<div class="page-catalog-block clearfix">
+						<p class="find-items">Найдено товаров: <span class="find-number">19</span></p>
+						<div class="page-block clearfix">
+							<a href="" class="active">1</a>
+							<a href="">2</a>
+							<a href="">3</a>
+							<a href="">...</a>
+							<a href=""><img src="img/arrow-sort-link.jpg" alt=""></a>
+						</div>
+					</div>
+					<div class="help-choice clearfix">
+						<div class="help-choice_left">
+							<p class="help-choice-main">Вам помочь с выбором?</p>
+							<p class="help-choice-black">Мы не только знаем всё о продукции,<br> но и отлично разбираемся в </p>
+							<p class="help-choice-text">Нажмите на кнопку «Задать вопрос» и получите бесплатную консультацию от наших специалистов.</p>
+							<a href="" class="btn-quest">Задать вопрос</a>
+						</div>
+						<div class="help-choice_right">
+							<img src="img/speech-bubble.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- footer -->
+
+	<div class="hidden"></div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Load Scripts Start -->
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+	<!-- Load Scripts End -->
+
+</body>
+</html>
