@@ -1,0 +1,940 @@
+@import "bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+	body
+		font-size: 13px
+		line-height: 13px
+
+	header
+		.header_functional
+			.header_functional_block
+				.header_functional_block__menu
+					li 
+						font-size: 0.9em
+						&:nth-of-type(1):after,
+						&:nth-of-type(2):after,
+						&:nth-of-type(3):after,
+						&:nth-of-type(4):after
+							width: 10px
+							height: 6px
+					.header_functional_block__search
+						img 
+							width: 13px
+							height: 13px
+					.header_functional_block__basket
+						img
+							width: 15px
+							height: 13px
+
+	.type 
+		.type_menu
+			.type_menu__list
+				.type_menu__list-block 	
+					.type_menu__list-block-img
+						max-width: 22px
+
+	.about 
+		.about_right 
+			.about_right__feedback 
+				.feedback-block 
+					.feedback-name
+						span 
+							font-size: 0.8em
+
+	.footer-navigation 
+		.footer-container 
+			.footer-navigation__column 
+				.cooperation 
+					li 
+						a
+							font-size: 0.8em
+				.email 
+					.icon-email
+						width: 12px
+						height: 9px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	body
+		font-size: 11px
+		line-height: 11px
+
+	.container
+		padding: 0 15px
+	
+	header 
+		.header_base
+			.header_base__course
+				margin-right: 6%
+		.header_main
+			.container 
+				.header_main-container
+					.phone-number
+						p 
+							padding-left: 25px
+							&:before
+								width: 18px
+								height: 18px
+		.header_functional
+			.header_functional_block
+				.header_functional_block__menu
+					padding: 2% 0
+					li 
+						font-size: 1em
+						&:nth-of-type(1):after,
+						&:nth-of-type(2):after,
+						&:nth-of-type(3):after,
+						&:nth-of-type(4):after
+							width: 8px
+							height: 4px
+				.header_functional_block__search,
+				.header_functional_block__basket
+					margin-top: 1.7%
+
+	.main-slider
+		.main-slider_slide
+			height: 340px
+		.functional-container
+		.main-slider_functional
+			height: 340px
+
+	.type 
+		.type_menu
+			.type_menu__list
+				.type_menu__list-block 
+					margin-right: 2%
+					padding: 3% 0
+					&:nth-child(1)
+						width: 14%
+					&:nth-child(2)
+						width: 19%
+					&:nth-child(3)
+						width: 16%
+					&:nth-child(4)
+						width: 13%
+					&:nth-child(5)
+						width: 14%
+					&:nth-child(6)
+						width: 11%
+						margin-right: 0	
+					.type_menu__list-block-img
+						max-width: 18px
+						max-height: 18px
+		.type_catalog 
+			.type_catalog__slider 
+				.item_block__info 
+					.item_block__info-text 
+						.buy-block 	
+							img 
+								width: 14%
+			.btn-all	
+				text-align: center
+				padding-left: 0
+				img 
+					display: none
+
+	.about 
+		.about_right 
+			.about_right__feedback 
+				.feedback-block 
+					.feedback-name
+						&:before
+							height: 10px
+						span 
+							font-size: 0.8em
+
+	.proposition 
+		.proposition_slider 
+			.proposition_slider__info
+				height: 427px
+		.proposition_block_form 
+			.proposition_form
+				height: 427px
+
+	.calculation 
+		.calculation-container 
+			.calculation_form 
+				.calculation_form__text 
+					.icon-phone,
+					.icon-man
+						background-position: 7px 6px
+	
+	.contacts 
+		.contacts-container 
+			.contacts_info
+				width: 35%
+
+	.arrow
+		position: absolute
+		top: 50%
+		margin-top: -8px
+		width: 15px
+		height: 16px
+
+	.shipping-and-payment_info
+		form
+			.form-column-right
+				input[type="submit"]
+					font-size: 1em
+					line-height: 2.2em
+					border-radius: 3px
+
+	.mobile-navigation
+		display: block
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+	.information 
+		form 
+			.form-column-right 
+				input[type="submit"]
+					width: 80%
+			.form-column-left 
+				label 
+					margin-right: 5%
+
+	header 
+		.header_base
+			.header_base__course
+				margin-right: 1%
+		.header_main
+			.container 
+				.header_main-container
+					.phone-number
+						p:before
+							width: 17px
+							height: 17px
+		.header_functional
+			.header_functional_block
+				.header_functional_block__menu
+					li 
+						&:nth-of-type(1):after,
+						&:nth-of-type(2):after,
+						&:nth-of-type(3):after,
+						&:nth-of-type(4):after
+							width: 6px
+							height: 3px
+				.header_functional_block__search,
+				.header_functional_block__basket
+					margin-top: 1%
+		.call-back 
+			.call-back_form 
+				form 
+					label:before
+						top: 289%
+						left: 7%
+						width: 6px
+						height: 9px
+
+	.type 
+		.type_catalog 
+			.type_catalog__slider 
+				.item_block__info
+					margin-right: 2.8%
+		.type_menu
+			.type_menu__list
+				.type_menu__list-block 
+					margin-right: 2%
+					padding: 3% 0
+					&:nth-child(1)
+						width: 14%
+					&:nth-child(2)
+						width: 19%
+					&:nth-child(3)
+						width: 16%
+					&:nth-child(4)
+						width: 13%
+					&:nth-child(5)
+						width: 14%
+					&:nth-child(6)
+						width: 11%
+						margin-right: 0	
+					.type_menu__list-block-img
+						max-width: 10px
+						max-height: 10px
+					.type_menu__list-block-link
+						font-size: 0.9em
+
+	.about 
+		.about_right 
+			.feedback_link-more:before
+				width: 11px
+				height: 11px
+
+	.proposition 
+		.proposition_slider 
+			.proposition_slider__info
+				height: 410px
+				.slide_info 
+				 	.slide_info__text 
+				 		.list-left,
+				 		.list-right
+				 			li:before
+				 				top: 0
+				 				width: 3px
+				 				height: 3px
+		.proposition_block_form 
+			.proposition_form
+				height: 410px
+				.proposition_form__container 
+					.icon-phone
+						background: none
+ 
+	.calculation 
+		.calculation-container 
+			.calculation_form 
+				.calculation_form__text 
+					.icon-phone
+						background-image: url('../img/icon-input-phone-small.png')
+					.icon-man
+						background-image: url('../img/icon-man-small.png')
+					.icon-phone,
+					.icon-man
+						background-position: 7px 10px 
+	
+	.footer-navigation 
+		.footer-container
+			padding: 4% 0
+			.footer-navigation__column
+				display: none
+				&:last-child
+					display: block
+					width: 100%
+					text-align: left
+					.mobile-left
+						float: left
+						.call
+							margin-bottom: 0
+					.mobile-right
+						float: right
+
+
+	.complete-roof 
+		.block-complete-roof_column 
+			.block-complete-roof_column-1 
+				.block-complete-roof_button
+					font-size: 0.8em
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	body
+		font-size: 11px
+		line-height: 11px
+	
+	.block-navigation,
+	.gallery
+		display: none
+	
+	.information_about-us,
+	.information-certificates,
+	.information-reviews,
+	.information-vacancies,
+	.cement,
+	.completed-projects,
+	.complete-roof,
+	.shipping-and-payment_info,
+	.heater,
+	.installation-ceramics,
+	.installation-services,
+	.installation-water,
+	.snow-retention,
+	.soffits,
+	.catalog
+		width: 100% 	
+		margin-left: 0
+
+	header 
+		.header_base
+			.header_base__main
+				width: 100%
+				margin-bottom: 3%
+				text-align: center
+				li 
+					padding-right: 1.5%
+					padding-left: 1.5%
+			.header_base__course
+				display: none
+			.header_base__city
+				float: left
+				width: 100%
+				li 	
+					padding-left: 0//16px
+					padding-right: 2.6%//11px
+					margin-top: 0//14px
+					margin-bottom: 2%
+					&:last-child
+						padding-left: 3%
+						line-height: 1.1em
+		.header_main
+			.container 
+				.header_main-container
+					.header_main__logo
+						width: 37%
+						margin-right: 10%
+					.header_main__text 
+						width: 53%
+						.main-text
+							text-align: right
+					.phone-number
+						float: left
+						margin-top: 3%
+					.btn-call
+						float: right
+						margin-top: 3%
+						width: 30%
+		.header_functional
+			.header_functional_block
+				.header_functional_block__menu
+					display: none
+					li 
+						font-size: 0.9em
+						margin-right: 2.5%
+						&:nth-of-type(1):after,
+						&:nth-of-type(2):after,
+						&:nth-of-type(3):after,
+						&:nth-of-type(4):after
+							width: 6px
+							height: 3px
+				.menu-burger
+					display: block
+				.header_functional_block__search,
+				.header_functional_block__basket
+					margin-top: 2.5%
+
+	.main-slider
+		.main-slider_slide
+			height: 200px
+		.functional-container
+		.main-slider_functional
+			height: 200px
+
+	.type 
+		.type_menu
+			.type_menu__list
+				.type_menu__list-block 	
+					&:nth-child(1),
+					&:nth-child(2),
+					&:nth-child(3),
+					&:nth-child(4),
+					&:nth-child(5),
+					&:nth-child(6)
+						width: 70%
+						margin-left: 15%
+						margin-right: 0
+					&:nth-child(1),
+					&:nth-child(3),
+					&:nth-child(5)
+						margin-right: 0
+					.type_menu__list-block-img
+						max-width: 30px
+						max-height: 30px
+						margin-right: 4%
+					.type_menu__list-block-link
+						font-size: 1.6em
+		.type_catalog 
+			.type_catalog__slider
+				.item_block__info
+					display: none
+					&.watch 
+						display: block
+						width: 100%
+						.item_block__info-text
+							padding: 0 6.8%
+							.info-main
+								font-size: 1.8em
+								line-height: 1em
+							.info-content
+								font-size: 1.6em
+								line-height: 1em
+							.buy-block 	
+								width: 100%
+								margin-bottom: 9%
+								.buy-price
+									width: 63%
+									font-size: 2em
+									line-height: 2em
+			.btn-all
+				font-size: 1.4em
+				width: 45%
+				.a-arrow
+					img 
+						display: none
+	
+	.services 
+		.services-container 
+			.services_delivery 
+				.services_delivery__left
+					.services_delivery__left-text
+						font-size: 1.5em
+				.services_delivery__right 
+					.services_delivery__right-link
+						width: 55%
+						font-size: 1em
+						border: 1px solid #7a7a7a
+
+	.services 
+		.services-container 
+			.services_block 
+				.services_block__item
+					width: 100%
+					margin-bottom: 5%
+					&:last-child
+						margin-bottom: 0
+					.item_img
+						margin-bottom: 4%
+						width: 40%
+					.item-name
+						font-size: 2em
+						margin-bottom: 4%
+					.item-description
+						font-size: 2em
+						margin-bottom: 4%
+					.item-link-more
+						font-size: 2em
+				.services_block__item:nth-child(2)
+					width: 100%
+					margin-bottom: 5%
+					&:last-child
+						margin-bottom: 0
+					.item_img
+						margin-bottom: 4%
+						width: 40%
+					.item-name
+						font-size: 2em
+						margin-bottom: 4%
+					.item-description
+						font-size: 2em
+						margin-bottom: 4%
+					.item-link-more
+						font-size: 2em
+			.services_delivery
+				margin: 0
+				.services_delivery__right 
+					.services_delivery__right-link
+						width: 70%
+
+	.about 
+		.about_right 
+			.about_right__feedback 
+				.feedback-block 
+					.feedback-name
+						span 
+							font-size: 0.8em
+
+	.about 
+		.about_left
+			width: 100%
+			margin-bottom: 7%
+			.about_left__content,
+			.about_left__link
+				font-size: 1.5em 
+		.about_right
+			width: 100%
+			text-align: left
+			.about_right__feedback
+				width: 87%
+				.feedback-block 
+					.feedback-name,
+					.feedback-text,
+					.feedback-link
+						font-size: 1.5em
+						line-height: 1.8em
+						margin-bottom: 4%
+					.feedback-name .feedback-city
+						font-size: 1em
+			.feedback_link-more
+				font-size: 1.5em
+
+	.proposition 
+		.proposition_slider 
+			width: 100%
+			.proposition_slider__info
+				height: 378px
+		.proposition_block_form 
+			width: 100%
+			.proposition_form
+				height: 378px
+				.proposition_form__container 
+					input[type="tel"]
+						padding-left: 7%
+						width: 93%
+
+	.calculation 
+			.calculation-container 
+				.calculation_form 
+					.calculation_form__text 
+						width: 70%
+						margin-left: 0
+						input[type=submit]
+							font-size: 1em
+						.icon-phone,
+						.icon-man
+							background-position: 5px 12px 
+					.calculation_form__img	
+						display: none
+
+	.footer-navigation 
+		.footer-container 
+			.footer-navigation__column 
+				.navigation-name
+					margin-bottom: 15px
+				.cooperation
+					border: none
+				ul:not(.cooperation) li
+					margin-bottom: 10px
+				.number 
+					font-size: 1.3em
+				.email 
+					.icon-email
+						width: 6px
+						height: 6px
+				.social-icon
+					.vk
+						margin-right: 5px
+						img
+							width: 16px
+							height: 16px
+					.inst
+						img 
+							width: 16px
+							height: 16px
+
+	.copyright
+		background-color: #222
+		.copyright-container
+			.copyright_left
+				max-width: 60%
+			.copyright_right
+				max-width: 40%
+
+	.contacts 
+		.contacts-container 
+			.contacts_info 
+				margin-left: 0
+				margin-bottom: 5%
+			.contacts_info,
+			.contacts_address
+				width: 100%
+				.map_text 
+					.yandex-map_block
+						width: 99%
+
+	.proposition-page 
+		.proposition-page_block-container 
+			.proposition-page_block-right 
+				.proposition-page-text 
+					.list-left li:before, 
+					.list-right li:before
+						top: 0
+
+	.soffits,
+	.snow-retention, 
+	.installation-ceramics, 
+	.installation-water, 
+	.cement,
+	.complete-roof, 
+	.shipping-and-payment_info,
+	.heater,
+	.installation-services,
+	.completed-projects,
+	.information-vacancies, 
+	.information_about-us, 
+	.information-reviews, 
+	.information-certificates,
+	.information .information_content,
+	.catalog
+		.main-inscription
+			margin-bottom: 15px
+			padding-bottom: 5px
+
+	.special-price 
+		.item_block 
+			.item_block__info
+				width: 35%
+				margin-right: 0
+				&:nth-of-type(2n)
+					float: right
+					margin-right: 10%
+				&:nth-of-type(2n+1)
+			 		margin-left: 10%
+				&:nth-of-type(1),	
+				&:nth-of-type(2)
+					margin-bottom: 5%
+
+	.block-navigation
+		ul 
+			li 
+				a 
+					padding-right: 18%
+					&:after
+						width: 4px
+						height: 4px
+						margin-top: -2px
+						right: 6%//17px
+
+	.shipping-and-payment_info
+		form
+			.form-column-right
+				input[type="submit"]
+					width: 80%
+					font-size: 0.9em
+					line-height: 1.6em//45px
+					border-radius: 2px
+
+	.complete-roof 
+		.block-complete-roof_column 
+			.block-complete-roof_column-1 
+				.block-complete-roof_button
+					font-size: 0.7em
+					line-height: 2em
+					border-radius: 1px
+
+	.catalog
+		.catalog_grid
+			.catalog__item
+				float: left
+				width: 100%
+				margin-bottom: 4%
+				&:nth-child(2n+1)
+					margin-right: 0
+				.catalog__item-name
+					font-size: 2em
+
+	form 
+		.form-column-right 
+			input[type="submit"]
+				font-size: 1em
+				line-height: 2em
+
+	.category-navigation
+		display: none 
+		
+	.category 
+		.category-items
+			width: 100%
+			margin-left: 0
+			.catalog-sort 
+				.item_block__info
+					width: 100%
+					margin-right: 0
+					margin-bottom: 10%
+					.item_block__info-text 
+						.info-main,
+						.info-content
+							font-size: 14px
+							line-height: 14px
+						.buy-block 
+							.buy-price
+								font-size: 14px
+								line-height: 3.2em
+							img 
+								width: 13%
+			.sort-block
+				width: 100%
+			.help-choice 
+				.help-choice_left 
+					.btn-quest
+						width: 60%
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+	header 
+		.header_base
+			.header_base__main
+				li 
+					padding-right: 1%
+					padding-left: 1%
+			.header_base__course
+				margin-right: 0.5%
+				width: 21%
+				span
+					margin-right: 1%//12px
+					padding-right: 0.5%//8px
+					padding-left: 0.5%//8px
+					font-size: 0.9286em//13px
+					line-height: 1.5385em//20px
+				p 
+					font-size: 0.9286em//13px
+					line-height: 1.5385em//20px
+					margin-right: 0.5%//16px
+			.header_base__city
+				min-width: 30%
+		.header_main
+			.container 
+				.header_main-container
+					.header_main__text
+						.main-text
+					.phone-number
+						p 
+							font-size: 1em
+					.btn-call
+						width: 37%//138px
+						font-size: 1em
+						line-height: 2em//27px
+		.header_functional
+			.header_functional_block
+				.header_functional_block__menu
+					li 
+						margin-right: 4%
+	.type 
+		.type_catalog 
+			.type_catalog__slider
+				.item_block__info
+					.item_block__info-text
+						.info-main
+							font-size: 1.1em
+						.info-content
+							font-size: 0.7em
+						.buy-block
+							.buy-price
+								font-size: 1em
+								line-height: 1.5em
+			.btn-all
+				padding-left: 0
+				text-align: center
+				font-size: 0.8em
+				line-height: 2em
+	
+	.services 
+		.services-container 
+			.services_delivery 
+				.services_delivery__left
+					.services_delivery__left-text
+						font-size: 1.2em
+				.services_delivery__right 
+					.services_delivery__right-link
+						width: 84%
+
+	.copyright 
+		.copyright_left 
+			.copyright_logo
+				margin-right: 5px
+			.copyright-text
+				font-size: 0.74em
+		.copyright_right 
+			.copyright_powered
+				margin-right: 5px
+			.copyright-text
+				font-size: 0.74em
+
+	.form-contacts 
+		.form-contacts-container 
+			form
+				width: 70%
+
+	.proposition-page 
+		.proposition-page_block-container 
+			.proposition-page_block-right
+				width: 68%
+
+
+	.proposition 
+		.proposition_slider 
+			.dots-block
+				bottom: 3%
+			.proposition_slider__info
+				height: 360px
+				.slide_info 
+					.slide_info__text 
+						p
+							font-size: 1.3em
+		.proposition_block_form 
+			.proposition_form
+				height: 400px
+				.proposition_form__container 
+					input[type="tel"]
+						padding-left: 2%
+						width: 98%
+
+	.calculation 
+		.calculation-container 
+			.calculation_form 
+				.calculation_form__text 
+					width: 90%
+					input[type="tel"], 
+					input[type="text"]
+						width: 80%
+						padding-left: 10%
+					input[type=submit]
+						width: 60%
+						line-height: 2.4em
+					.icon-phone, 
+					.icon-man
+						background-position: 12px 11px
+
+	.information 
+		form 
+			.form-column-right 
+				input[type="submit"]
+					width: 95%	 	
+
+	.category 
+		.category-items 
+			.page-catalog-block 
+				.page-block
+					width: 33%
+
+	.category 
+		.category-items 
+			.sort-block 
+				.page-block
+					float: left
+					width: 35%
+					margin-top: 2%
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
+
+

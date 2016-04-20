@@ -1,0 +1,3244 @@
+@import "bourbon"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+body
+	min-width: 320px
+	font-size: 14px
+	line-height: 14px
+	position: relative
+	font-family: "OpenSans", sans-serif
+	overflow-x: hidden
+
+.hidden //блок где все модальные окна
+	display: none
+
+h1,
+h2,
+p,
+ul
+	margin: 0
+	padding: 0
+
+.container-fluid
+	max-width: 1170px
+	margin-left: auto
+	margin-right: auto
+
+.container
+	max-width: 980px
+	margin-left: auto
+	margin-right: auto
+	padding: 0 9.7%
+
+.clearfix:after 
+  content: ''
+  display: table
+  clear: both
+
+header 
+	.header_base
+		width: 100%
+		background-color: #252525
+		.header_base__main
+			float: left
+			min-width: 39%
+			list-style-type: none
+			margin: 1.53% 0
+			li 
+				float: left
+				padding-right: 3%
+				padding-left: 3%
+				border-right: 1px solid #fff
+				&:first-child
+					padding-left: 0
+				&:last-child
+					padding-right: 0
+					border-right: none
+				a 
+					font-size: 0.8571em//12px
+					line-height: 1em//3.67em//44px
+					color: #fff
+					text-decoration: underline			
+		.header_base__course
+			float: right
+			margin-right: 8.5%
+			margin-top: 1.225%
+			min-width: 19%
+			span
+				display: inline-block
+				vertical-align: middle
+				margin-right: 7.64%//12px
+				padding-right: 5.3%//8px
+				padding-left: 5.3%//8px
+				font-size: 0.9286em//13px
+				line-height: 1.5385em//20px
+				color: #fff
+				background-color: #575757
+			p 
+				display: inline-block
+				vertical-align: middle
+				color: #fff 
+				font-size: 0.9286em//13px
+				line-height: 1.5385em//20px
+				margin-right: 10.19%//16px
+				&:last-child
+					margin-right: 0
+		.header_base__city
+			float: right
+			min-width: 24%
+			list-style-type: none
+			li 	
+				float: left
+				font-size: 0.9286em//13px
+				line-height: 1em//13px
+				color: #9b9b9b
+				border-right: 1px solid #9b9b9b
+				padding-left: 8.2%//16px
+				padding-right: 5.65%//11px
+				margin-top: 7.18%//14px
+				&:last-child
+					color: #4388c2
+					border-right: none
+					padding-left: 5.65%
+					padding-right: 0
+			.icon-loc,
+			.icon-down
+				display: inline-block
+				vertical-align: middle
+				img 
+					width: 100%
+					height: auto
+			.icon-loc
+				width: 15%
+			.icon-down
+				vertical-align: top	
+				width: 6.1%
+	.header_main
+		background-color: #fff
+		.header_main-container
+			padding: 3% 0
+			.header_main__logo
+				float: left 
+				width: 15.92%
+				margin-right: 2.55%
+				img
+					width: 100%
+					height: auto
+			.header_main__text
+				float: left
+				.main-text 
+					font-size: 1em//13px
+					line-height: 1.5385em
+					color: #7d7d7d
+					font-weight: normal
+			.phone-number
+				float: right
+				min-width: 21%
+				p 
+					position: relative
+					font-size: 1.4286em//20px
+					line-height: 1em//20px
+					color: #000000
+					padding-left: 35px
+					text-align: right
+					&:before
+						content: ''
+						position: absolute
+						top: 0
+						left: 0
+						width: 28px
+						height: 28px
+						background: url("../img/icon-phone.png") no-repeat
+						background-size: 100% 100%
+					&:after 
+						content: 'Ежедневно с 9:00 до 18:00'
+						position: absolute
+						bottom: -70%
+						right: 0
+						color: #7d7d7d
+						font-size: 0.55em 
+						line-height: 1em
+					span 
+						color: #c91028
+						font-size: 1em
+			.btn-call
+				float: right
+				margin-left: 1.94%
+				width: 14.08%//138px
+				font-size: 0.8572em
+				line-height: 2.25em//27px
+				color: #000000
+				font-weight: bold
+				border: 1px solid #c91028
+				border-radius: 2px
+				text-align: center
+				text-decoration: none
+				text-transform: uppercase
+	.header_functional
+		background-color: #ffffff
+		position: relative
+		.header_functional_block
+			border-top: 1px solid #e4e4e4
+			.header_functional_block__menu
+				float: left
+				list-style-type: none
+				padding: 2.55% 0
+				width: 90%
+				li 
+					float: left
+					position: relative
+					font-size: 1em
+					line-height: 1em
+					font-weight: 700
+					text-transform: uppercase
+					margin-right: 5.5%//50px 
+					cursor: pointer
+					&:last-of-type
+						margin-right: 0
+					&:nth-of-type(1),
+					&:nth-of-type(2),
+					&:nth-of-type(3),
+					&:nth-of-type(4)
+						padding-right: 2.2%//22px
+					&:nth-of-type(1):after,
+					&:nth-of-type(2):after,
+					&:nth-of-type(3):after,
+					&:nth-of-type(4):after
+						content: ''
+						position: absolute
+						top: 0
+						right: 0
+						width: 12px
+						height: 8px
+						background: url("../img/icon-down-grey.png") no-repeat
+						background-size: 100% 100%
+			.header_functional_block__search
+				margin-top: 2.3%
+				float: right
+				width: 14px
+				height: 14px
+				cursor: pointer		
+			.header_functional_block__basket
+				margin-top: 2.3%
+				margin-left: 5%
+				float: right
+				width: 18px
+				height: 16px
+				cursor: pointer	
+			.menu-burger
+				display: none
+				float: left
+				width: 25px 
+				height: 22px
+				margin: 2% 0
+		.menu-mobile
+			display: none
+			position: absolute
+			top: 100%
+			left: 0
+			width: 100%
+			z-index: 1
+			background-color: #fff
+			border-bottom: 1px solid #e4e4e4
+			.menu-mobile_first-line
+				border-top: 1px solid #e4e4e4
+				margin: 0
+				padding: 0
+				list-style-type: none
+				li
+					&:first-child
+						margin-top: 2%
+					a 
+						display: inline-block
+						font-weight: bold
+						font-size: 1.7em
+						line-height: 1em
+						margin-bottom: 2%
+						color: #333
+						text-decoration: none
+				.menu-mobile_second-line
+					display: none
+					margin: 0
+					padding: 0
+					background-color: #f4f4f4
+					list-style-type: none
+					li
+						&:first-child
+							margin-top: 2%
+						a 
+							display: inline-block
+							font-weight: bold
+							font-size: 1.3em
+							line-height: 1em
+							margin-bottom: 2%
+							color: #333
+							text-decoration: none
+					.menu-mobile_third-line
+						display: none
+						margin: 0
+						padding: 0
+						list-style-type: none
+						&:last-child
+							margin-bottom: 0
+						a 
+							display: inline-block
+							font-size: 1.2em
+							line-height: 1em
+							margin-bottom: 2%
+							color: #333
+							text-decoration: underline
+						li:last-child a
+							margin-bottom: 4%
+		.header_functional_block__catalog
+			display: none
+			position: absolute
+			top: 100%
+			left: 0
+			width: 100%
+			z-index: 1
+			background-color: #f4f4f4	
+			border-top: 1px solid #e4e4e4
+			border-bottom: 1px solid #e4e4e4
+			.catalog_column
+				float: left	
+				margin: 4% 0
+				&:first-child
+					margin-left: 4%
+					width: 26%
+				&:nth-child(2)
+					width: 21%
+				&:nth-child(3)
+					width: 27%
+				&:last-child
+					width: 22%
+				.catalog-name
+					font-size: 1.07em
+					line-height: 1em
+					font-weight: bold
+					color: #333
+					margin-bottom: 9.8%//25px
+				.catalog-link
+					margin: 0
+					padding: 0
+					list-style-type: none
+					margin-bottom: 15.7%//40px
+					&:last-child
+						margin-bottom: 0
+					a 
+						display: inline-block
+						font-size: 0.93em
+						line-height: 1em
+						margin-bottom: 7%
+						color: #333
+						text-decoration: underline
+					li:last-child a
+						margin-bottom: 0
+		.header_functional_block__services
+			display: none
+			position: absolute
+			top: 100%
+			left: 0
+			width: 100%
+			z-index: 1
+			background-color: #f4f4f4	
+			border-top: 1px solid #e4e4e4
+			border-bottom: 1px solid #e4e4e4
+			.services_column
+				float: left 
+				margin: 4% 0
+				&:first-child
+					width: 36%
+					margin-left: 4%
+				&:nth-child(2)
+					width: 25%
+				&:nth-child(3)
+					width: 31%
+				.services-name
+					font-size: 1.07em
+					line-height: 1em
+					font-weight: bold
+					color: #333
+					margin-bottom: 9%
+				.services-link
+					margin: 0
+					padding: 0
+					list-style-type: none
+					a 
+						display: inline-block
+						font-size: 0.93em
+						line-height: 1em
+						margin-bottom: 5%
+						color: #333
+						text-decoration: underline
+					li:last-child a
+						margin-bottom: 0
+				.services-other
+					display: block
+					font-size: 1.07em
+					line-height: 1em
+					font-weight: bold
+					color: #333
+					margin-bottom: 14%
+					padding-left: 5px
+					text-decoration: none
+				.calculation-img
+					width: 76%
+					height: auto
+					margin-bottom: 6.6%
+				.calculation-name
+					display: inline-block
+					font-size: 1.07em
+					line-height: 1em
+					font-weight: bold
+					color: #333
+					padding-bottom: 3.3%
+					border-bottom: 1px solid #bdbdbd
+					margin-bottom: 3.3%
+				.calculation-link
+					display: block
+					font-size: 0.93em
+					line-height: 1em
+					color: #8a8a8a
+					text-decoration: none
+		.header_functional_block__information
+			display: none
+			position: absolute
+			top: 100%
+			left: 0
+			width: 100%
+			z-index: 1
+			background-color: #f4f4f4	
+			border-top: 1px solid #e4e4e4
+			border-bottom: 1px solid #e4e4e4
+			.information_list
+				margin: 0
+				padding: 0
+				list-style-type: none
+				margin: 4% 0
+				margin-left: 4.6%
+				li 
+					float: left
+					margin-right: 10.6%
+					&:last-child
+						margin-right: 0
+					a 
+						font-size: 1.07em
+						line-height: 1em
+						font-weight: bold
+						color: #333
+						text-decoration: none
+		.header_functional_block__business
+			display: none
+			position: absolute
+			top: 100%
+			left: 0
+			width: 100%
+			z-index: 1
+			background-color: #f4f4f4	
+			border-top: 1px solid #e4e4e4
+			border-bottom: 1px solid #e4e4e4
+			.business_list
+				margin: 0
+				padding: 0
+				list-style-type: none
+				margin: 4% 0
+				margin-left: 4.6%
+				li 
+					float: left
+					margin-right: 10.6%
+					&:last-child
+						margin-right: 0
+					a 
+						font-size: 1.07em
+						line-height: 1em
+						font-weight: bold
+						color: #333
+						text-decoration: none
+		.header_functional_block__search-action
+			display: none
+			position: absolute
+			z-index: 2
+			top: 100%
+			right: 0
+			max-width: 457px
+			width: 100%		
+			input[type="search"]
+				width: 100%
+				padding: 0
+				padding-left: 4.4%
+				border: none 
+				outline: none
+				color: #777
+				font-size: 1.07em
+				line-height: 3.133em
+				font-style: italic
+				font-family: OpenSansLight
+				background: url('../img/icon-arrow-search.png') no-repeat 95% 50%
+				background-color: #f4f4f4
+
+.main-slider
+	position: relative
+	.main-slider_slide
+		width: 100%
+		background-color: #dce8ee
+		height: 428px
+	.functional-container
+		position: absolute
+		top: 0
+		left: 0
+		margin-left: auto
+		margin-right: auto
+		width: 80.6%
+		padding: 0 9.7%
+	.main-slider_functional
+		position: relative
+		width: 100%
+		height: 428px
+		.arrow-left 
+			left: 0
+			background: url('../img/arrow-left.png') no-repeat
+			background-size: 100% 100%
+		.arrow-right 
+			right: 0
+			background: url('../img/arrow-right.png') no-repeat
+			background-size: 100% 100%
+		.dots-block
+			position: absolute
+			bottom: 30px
+			left: 50%
+			margin-left: -42px
+			font-size: 0
+			.dot
+				display: inline-block
+				vertical-align: middle
+				width: 20px
+				height: 20px
+				font-size: 10px
+				line-height: 20px
+				font-style: normal
+				text-align: center
+				border-radius: 50%
+				background-color: #fff
+				color: #000000
+				margin-right: 11px
+				cursor: pointer
+				&:last-child
+					margin-right: 0
+				&.active
+					color: #df8c29
+					border: 1px solid #df8c29
+
+.type 
+	.type_menu
+		border-top: 1px solid #e8e8e8
+		border-bottom: 1px solid #e8e8e8
+		background-color: #f7f7f7
+		.type_menu__list
+			list-style-type: none
+			padding: 0 1.5%
+			.type_menu__list-block 	
+				float: left
+				margin-right: 4%
+				cursor: pointer
+				position: relative
+				padding: 3% 0
+				&:nth-child(1)
+					width: 13%
+				&:nth-child(2)
+					width: 17%
+				&:nth-child(3)
+					width: 15%
+				&:nth-child(4)
+					width: 12%
+				&:nth-child(5)
+					width: 12%
+				&:nth-child(6)
+					width: 9%
+					margin-right: 0
+				&.active:after
+					content: ''
+					position: absolute
+					bottom: -9px
+					left: 0
+					width: 100%
+					height: 9px
+					background: url('../img/list.active.png') no-repeat
+					background-size: 100% 100%
+				&.active .type_menu__list-block-link
+					color: #ed1e26
+				.type_menu__list-block-img
+					float: left
+					margin-right: 9%
+					max-width: 32px
+				.type_menu__list-block-link
+					float: left
+					display: inline-block
+					font-size: 1em
+					line-height: 1em
+					color: #282828
+	.type_catalog
+		background-color: #ffffff
+		.main-inscription
+			padding-top: 8.16%
+			padding-bottom: 2.5%
+			margin-bottom: 4%
+			position: relative
+			text-align: center
+			font-size: 2.143em
+			line-height: 1em
+			font-weight: bold
+			color: #000
+			text-transform: uppercase
+			&:after 
+				content: ''
+				position: absolute
+				bottom: 0
+				left: 50%
+				margin-left: -12.95%
+				width: 25.9%//254px
+				height: 2px
+				background: url('../img/h1.after.png') no-repeat
+				background-size: 100% 100%
+		.type_catalog__slider
+			position: relative
+			margin-bottom: 4.6%
+			.arrow-left 
+				left: 0
+				background: url('../img/arrow-left-g.png') no-repeat
+				background-size: 100% 100%
+			.arrow-right 
+				right: 0
+				background: url('../img/arrow-right-g.png') no-repeat
+				background-size: 100% 100%
+			.item_block__info
+				float: left
+				width: 22.45%//220px
+				border: 1px solid #dfdfdf
+				margin-right: 3%
+				&:last-child
+					margin-right: 0 	
+				.item_block__info-img
+					position: relative
+					width: 100%
+					height: auto
+					&:hover .img-hover
+						display: block
+					&:before
+						content: ''
+						position: absolute
+						top: 0
+						left: 0
+						width: 100%
+						height: 100%
+						background: url('../img/icon-img-proposition.png') no-repeat
+					img 
+						width: 100%
+						height: auto
+						&:hover .img-hover
+							display: block
+					.img-hover
+						display: none
+						position: absolute
+						top: 0
+						left: 0
+						width: 100%
+						height: 100%
+						background: url('../img/more.hover.png') no-repeat
+						background-size: 100% 100%
+						cursor: pointer
+				.item_block__info-text
+					padding: 0 6.8%
+					.info-main
+						padding: 9% 0
+						font-size: 1.214em
+						line-height: 1em
+						font-weight: bold
+						color: #0c78bc
+						border-bottom: 1px solid #dfdfdf
+					.info-content
+						font-size: 1em
+						line-height: 1em
+						padding: 6.8% 0
+						color: #7b7b7b	
+						&:last-of-type
+							padding-bottom: 15.9%
+						span 
+							color: #000000
+					.buy-block 	
+						width: 100%
+						margin-bottom: 9%
+						img 
+							float: left
+							margin: 0
+							width: 16.84%
+							height: auto
+							margin-right: 5.2%
+							cursor: pointer
+						.buy-price
+							float: left
+							padding: 0
+							width: 63%
+							background-color: #fff6c9
+							border-radius: 2px 
+							font-size: 1.1429em
+							line-height: 2em
+							font-weight: bold
+							color: #000000
+							text-align: center
+		.btn-all 
+			margin: 0 auto
+			margin-bottom: 8.16%
+			padding-left: 6.6%
+			display: block
+			width: 25.5%
+			text-transform: uppercase
+			text-decoration: none
+			font-size: 1.1429em
+			line-height: 2.75em
+			color: #ffffff
+			background-color: #ed1e26
+			border-radius: 2px
+			letter-spacing: 1px
+			.a-arrow
+				display: inline-block
+				vertical-align: middle
+				margin-left: 4.4%
+				img
+					width: 100%
+					height: auto
+					background-size: 100% 100%
+
+.proposition
+	.proposition_slider
+		position: relative
+		float: left
+		width: 63%
+		.proposition_slider__info
+			width: 100%
+			background: url('../img/proposition-slide-1.jpg') no-repeat
+			background-size: 100% 100%
+			height: 486px
+			.container-proposition
+				max-width: 800px
+				margin-left: auto
+			.slide_info
+				float: right
+				margin-right: 23%
+				margin-top: 10%
+				position: relative
+				width: 47.5%	
+				background-color: #fff
+				border: 1px solid #dfdfdf
+				border-radius: 2px
+				padding: 4% 14% 4% 4%
+				.slide-right-img
+					position: absolute
+					top: 50%
+					margin-top: -27%
+					right: -27%
+					width: 54%
+					height: auto
+					border-radius: 50%
+				p 
+					font-size: 1.29em
+					line-height: 1.57em
+					font-weight: bold
+					padding-bottom: 4%
+					color: #000
+					span 
+						color: #ed1e26
+				.slide_info__text
+					position: relative
+					&:before
+						content: ''
+						position: absolute
+						width: 80%
+						border-top: 1px solid #a4a4a4
+					p
+						padding-top: 4%
+						font-size: 1.43em
+						line-height: 1em
+						font-weight: normal
+						color: #000
+					.list-left,
+					.list-right
+						float: left
+						list-style-type: none
+						li 
+							position: relative
+							font-size: 0.86em
+							line-height: 1em
+							margin-bottom: 6%
+							color: #656565
+							padding-left: 6%
+							&:last-child
+								margin-bottom: 0
+							&:before 
+								content: ''
+								position: absolute
+								top: 2px
+								left: 0
+								width: 7px
+								height: 7px
+								background: url('../img/li.proposition.png') no-repeat
+								background-size: 100% 100%
+					.list-left 
+						margin-right: 2%
+						margin-bottom: 2%
+						li 
+							padding-left: 7%
+		.dots-block
+			position: absolute
+			bottom: 9%
+			left: 50%
+			margin-left: -26px
+			font-size: 0
+			.dot
+				display: inline-block
+				vertical-align: middle
+				width: 20px
+				height: 20px
+				font-size: 10px
+				line-height: 20px
+				font-style: normal
+				text-align: center
+				border-radius: 50%
+				background-color: #fff
+				color: #000000
+				margin-right: 11px
+				cursor: pointer
+				&:last-child
+					margin-right: 0
+				&.active
+					color: #df8c29
+					border: 1px solid #df8c29
+	.proposition_block_form
+		float: right
+		width: 37%
+		background-color: #fadf4a
+		.proposition_form
+			float: left
+			max-width: 275px
+			width: 100%
+			height: 486px
+			.proposition_form__container
+				padding: 20% 7% 22% 15%
+				p 
+					padding-left: 1% //форма немного левее
+					span 
+						text-decoration: underline
+				p:first-child
+					position: relative
+					font-size: 1.57em
+					line-height: 1.1em
+					color: #000000
+					font-weight: bold
+					padding-bottom: 9.3%
+					text-transform: uppercase
+					&:first-child:after
+						content: ''
+						position: absolute
+						bottom: 0
+						left: 1%
+						width: 65%
+						height: 1px
+						background: url('../img/p.after.png') no-repeat
+						background-size: 100% 100%
+				p:not(:first-child)
+					font-size: 1.143em
+					line-height: 1.57em
+					margin-top: 11%
+				p:last-of-type
+					margin-top: 11%
+					margin-bottom: 11%
+				input[type="tel"]
+					width: 88%
+					padding: 0
+					padding-left: 12%
+					margin-bottom: 3%
+					border: none
+					outline: none
+					border: 1px solid #b7b7b7
+					border-radius: 2px
+					font-size: 1.143em
+					line-height: 2.5em
+					color: #000000
+					background-color: #FFF
+					&:placeholder 
+						color: #b7b7b7
+				.icon-phone 
+					background: url('../img/icon-input-phone.png') no-repeat
+					background-position: 8px 12px
+				input[type="submit"]
+					width: 100%
+					padding: 0
+					border-radius: 2px
+					border: none
+					outline: none
+					font-size: 1.143em
+					line-height: 2.5em
+					color: #ffffff
+					background-color: #ec1e1e
+
+.brand-world
+	background-color: #fff 
+	text-align: center
+	.main-inscription
+		padding-top: 8.16%
+		padding-bottom: 2.5%
+		margin-bottom: 4%
+		position: relative
+		text-align: center
+		font-size: 2.143em
+		line-height: 1em
+		font-weight: bold
+		color: #000
+		text-transform: uppercase
+		&:after 
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 50%
+			margin-left: -12.95%
+			width: 25.9%//254px
+			height: 2px
+			background: url('../img/h1.after.png') no-repeat
+			background-size: 100% 100%
+	.main-content 
+		margin-bottom: 6.1%
+		font-size: 1.214em
+		line-height: 1.41em
+		color: #575757
+	.brand-world_logo
+		width: 100%
+		height: auto
+		margin-bottom: 8.16%
+
+.services
+	background: url('../img/services-back.jpg') no-repeat
+	background-size: 100% 100%
+	.services-container
+		padding: 8.16% 0
+		.main-inscription
+			padding-bottom: 2.5%
+			margin-bottom: 6%
+			position: relative
+			text-align: center
+			font-size: 2.143em
+			line-height: 1em
+			font-weight: bold
+			color: #000
+			text-transform: uppercase
+			&:after 
+				content: ''
+				position: absolute
+				bottom: 0
+				left: 50%
+				margin-left: -12.95%
+				width: 25.9%//254px
+				height: 2px
+				background: url('../img/h1.after.png') no-repeat
+				background-size: 100% 100%
+		.services_block
+			margin-bottom: 7.14%
+			.services_block__item
+				float: left
+				margin-right: 9.18%//90px
+				width: 25.5%//250px
+				text-align: center
+				&:last-child
+					margin-right: 0
+				&:nth-child(2)
+					width: 30.6%//300px
+					.item_img
+						width: 55.33% //166px
+						margin-bottom: 10%
+					.item-name
+						margin-bottom: 7.66%
+					.item-description
+						margin-bottom: 8.333%
+				.item_img
+					margin: 0 auto
+					margin-bottom: 12%
+					width: 66.4% //166px
+					height: auto
+					border-radius: 50%
+				.item-name
+					margin-bottom: 9.2%
+					font-size: 1.286em//18px
+					line-height: 1.222em//22px
+					color: #000000
+					font-weight: bold
+				.item-description
+					margin-bottom: 10%
+					font-size: 1em
+					line-height: 1.72em//24px
+					color: #494949
+				.item-link-more
+					font-size: 1.1429em
+					line-height: 1em
+					color: #ee0808
+					text-decoration: underline
+		.services_delivery
+			margin: 0 6.12%
+			border: 3px solid #fadf4a
+			padding: 2% 6.63% 2% 5.61%
+			.services_delivery__left
+				float: left 
+				width: 20.44%//150px
+				.services_delivery__left-img
+					display: block
+					margin: 0 auto
+					width: 52%
+					height: auto
+					margin-bottom: 13.33%
+				.services_delivery__left-text
+					font-size: 1.786em//25px
+					line-height: 1.36em//34px
+					color: #6b6b6b
+					text-transform: uppercase
+					text-align: center
+			.services_delivery__right
+				float: right
+				width: 70.84%//520px
+				.services_delivery__right-text
+					font-size: 1em
+					line-height: 1.714em
+					color: #000
+					margin-bottom: 4.97%
+				.services_delivery__right-link
+					display: block
+					width: 46.43%//230px
+					border: 1px solid #7a7a7a
+					border-radius: 2px
+					font-size: 1.071em
+					line-height: 2.4em
+					text-transform: uppercase
+					text-decoration: none
+					text-align: center
+					color: #7a7a7a
+
+.about
+	background-color: #fff 
+	.about-block
+		padding: 7.14% 0
+	.about_left 
+		float: left
+		width: 50%
+		.main-inscription
+			position: relative
+			margin-bottom: 8.16%
+			padding-bottom: 4.08%
+			display: inline-block
+			font-size: 2.1429em
+			line-height: 1em
+			font-weight: bold
+			color: #000000
+			text-transform: uppercase
+			text-align: left 
+			&:after
+				content: ''
+				position: absolute
+				bottom: 0
+				left: 0
+				width: 100%
+				height: 2px
+				background: url('../img/h1.after.png') no-repeat
+				background-size: 100% 100%
+		.about_left__content
+			font-size: 1.071em
+			line-height: 1.4666em
+			color: #434343
+			margin-bottom: 6.11%
+			&:last-of-type
+				margin-bottom: 8.16%
+		.about_left__link
+			display: block
+			font-size: 1.142em
+			line-height: 1em
+			color: #ee0808
+			text-decoration: underline
+	.about_right
+		float: right
+		width: 50%
+		text-align: right
+		.main-inscription
+			position: relative
+			margin-bottom: 8.16%
+			padding-bottom: 4.08%
+			display: inline-block
+			font-size: 2.1429em
+			line-height: 1em
+			font-weight: bold
+			color: #000000
+			text-transform: uppercase
+			&:after
+				content: ''
+				position: absolute
+				bottom: 0
+				left: 0
+				width: 100%
+				height: 2px
+				background: url('../img/h1.after.png') no-repeat
+				background-size: 100% 100%
+		.about_right__feedback
+			width: 63.27%
+			display: inline-block
+			padding: 5.1% 6.1% 7.1% 6.1%
+			border: 1px solid #e8e8e8
+			background-color: #f8f8f8
+			text-align: left
+			margin-bottom: 4%
+			.feedback-block
+				margin-bottom: 9.7%
+				&:last-child
+					margin-bottom: 0
+				.feedback-name
+					position: relative
+					font-size: 1.142em
+					line-height: 1em
+					color: #000
+					padding-left: 7%
+					margin-bottom: 6.4%
+					&:before
+						content: ''
+						position: absolute
+						top: 0
+						left: 0
+						width: 14px
+						height: 14px
+						background: url('../img/icon-feedback.png') no-repeat
+						background-size: 100% 100%
+					.feedback-city
+						color: #fcb305
+						font-size: 0.8em
+				.feedback-text
+					font-size: 1em
+					line-height: 1.43em
+					color: #444
+					margin-bottom: 6.5%
+				.feedback-link
+					font-size: 1em
+					line-height: 1.43em
+					color: #263ed0
+					text-decoration: underline
+		.feedback_link-more
+			position: relative
+			display: inline-block
+			font-size: 1.142em
+			line-height: 1em
+			color: #ee0808
+			text-decoration: underline
+			padding-left: 5.1%
+			&:before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 16px
+				height: 16px
+				background: url('../img/icon-feedback-more.png') no-repeat
+				background-size: 100% 100%
+
+.gallery
+	background-color: #f0f0f0
+	.main-inscription
+		position: relative
+		padding-top: 5.1%
+		margin-bottom: 5.1%
+		padding-bottom: 1.7%
+		display: inline-block
+		font-size: 2.1429em
+		line-height: 1em
+		font-weight: bold
+		color: #000000
+		text-transform: uppercase
+		text-align: left 
+		&:after
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 100%
+			height: 2px
+			background: url('../img/h1.after.png') no-repeat
+			background-size: 100% 100%
+	.gallery_slider
+		position: relative
+		.gallery_slider__slide
+			.gallery_img
+				float: left
+				width: 28.78%//282px
+				height: auto
+				margin-right: 6.83%
+				&:last-of-type
+					margin-right: 0
+				img 
+					width: 100%
+					height: auto
+		.arrow-left 
+			left: 0
+			background: url('../img/arrow-left-g.png') no-repeat
+			background-size: 100% 100%
+		.arrow-right 
+			right: 0
+			background: url('../img/arrow-right-g.png') no-repeat
+			background-size: 100% 100%
+	.container-padding
+		padding-bottom: 6.6%
+
+.calculation
+	background-color: #fadf4a
+	.calculation-container
+		padding: 6.6% 0
+		.calculation_form
+			.calculation_form__text
+				float: left 
+				width: 50%
+				margin-left: 8.6%
+				.form-main-text
+					font-size: 1.86em
+					line-height: 1.3em
+					text-transform: uppercase
+					margin-bottom: 4.3%
+					color: #000000
+				.form-text
+					font-size: 1.14em
+					line-height: 1.375em
+					color: #000
+					margin-bottom: 4.5%
+					span 
+						color: #dd0c14
+						text-decoration: underline
+				input[type="tel"],
+				input[type="text"]
+					width: 65%
+					padding: 0
+					margin-bottom: 2.5%
+					padding-left: 7.1%
+					border: none
+					outline: none
+					border: 1px solid #b7b7b7
+					border-radius: 2px
+					font-size: 1.14em
+					line-height: 2.5em
+					color: #000000
+					background-color: #ffffff
+					&:placeholder 
+						color: #b7b7b7
+				.icon-phone
+					background: url('../img/icon-input-phone.png') no-repeat
+					background-position: 8px 13px
+				.icon-man
+					background: url('../img/icon-man.png') no-repeat
+					background-position: 8px 13px
+				input[type="submit"]
+					width: 50%
+					padding: 0
+					border-radius: 2px
+					border: none
+					outline: none
+					font-size: 1.14em
+					line-height: 2.5em
+					color: #ffffff
+					background-color: #ec1e1e
+			.calculation_form__img
+				float: right 
+				margin-top: 9.2%
+				margin-right: 8.6%
+				width: 25%
+				height: auto
+
+.footer-navigation
+	background-color: #2e2e2e
+	.footer-container
+		padding: 6.1% 0
+		.footer-navigation__column
+			float: left 
+			text-align: left
+			&:first-child
+				width: 30%
+			&:nth-child(4)
+				width: 32%
+				text-align: right
+			&:nth-child(2)
+				width: 24%
+			&:nth-child(3)
+				width: 14%
+				.navigation-name
+					padding-left: 9.5%
+				ul:first-of-type
+					padding-left: 9.5%
+			.navigation-name
+				font-size: 1.1429em
+				line-height: 1em
+				color: #fff
+				text-transform: uppercase
+				font-weight: bold
+				margin-bottom: 30px
+			ul:not(.cooperation)
+				width: 100%
+				margin: 0
+				padding: 0
+				list-style-type: none
+				li 
+					margin-bottom: 15px
+					&:last-child
+						margin-bottom: 0
+					a 
+						display: block
+						font-size: 0.929em
+						line-height: 1em
+						color: #c6c6c6
+						text-decoration: none
+			.cooperation
+				margin: 0
+				padding: 0
+				list-style-type: none
+				margin-top: 11%
+				padding: 8.76% 8.76%
+				border: 1px solid #ffffff
+				li 
+					display: inline-block
+					vertical-align: middle
+					margin-bottom: 13.5%
+					&:last-child
+						margin-bottom: 0
+					a 
+						font-size: 0.93em
+						line-height: 1em
+						color: #c6c6c6
+						text-decoration: none
+			.schedule
+				font-size: 1em
+				line-height: 1em
+				color: #a1a1a1
+				margin-bottom: 4.8%
+			.number 
+				font-size: 1.64em
+				line-height: 1em
+				font-weight: bold
+				color: #ffffff
+				margin-bottom: 4.8%
+				span 
+					color: #fadf4a
+			.call 
+				display: inline-block
+				vertical-align: top
+				font-size: 1em
+				line-height: 1em
+				color: #a1a1a1
+				border-bottom: 1px dotted #a1a1a1
+				margin-bottom: 12.7%
+			.email
+				font-size: 1em
+				line-height: 1em
+				color: #a1a1a1
+				margin-bottom: 12.7%
+				.icon-email
+					display: inline-block
+					width: 15px
+					height: 11px
+					background: url("../img/icon-email.png") no-repeat
+					background-size: 100% 100%
+				span 
+					color: #ffffff
+			.social-icon
+				.vk
+					float: right
+					display: block
+					margin-right: 10px
+					img
+						width: 32px
+						height: 32px
+				.inst
+					float: right
+					display: block
+					img
+						width: 32px
+						height: 32px
+
+.copyright
+	background-color: #222
+	.copyright-container
+		padding: 2% 0
+	.copyright_left
+		float: left 
+		min-width: 55%
+		.copyright_logo
+			float: left
+			margin-right: 12px
+			width: 20%
+			height: auto
+		.copyright-text
+			float: left
+			font-size: 0.9em
+			line-height: 2em
+			color: #a1a1a1
+	.copyright_right
+		float: right
+		min-width: 40%
+		.copyright-text
+			float: right
+			font-size: 0.9em
+			line-height: 1.86em
+			color: #a1a1a1
+		.copyright_powered
+			float: right
+			width: 30%
+			height: auto
+			margin-left: 12px
+//Всплывающие окна
+//тень при всплывающих окнах
+.shadow
+	display: none
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: rgba(0, 0, 0, .5)	
+
+.active-shadow
+	display: block
+	z-index: 1
+//Окно обратный звонок
+.call-back
+	display: none
+	position: fixed
+	z-index: 2
+	top: 15%
+	left: 50%
+	transform: translate(-50%)
+	-webkit-transform: translate(-50%)
+	width: 46%
+	max-width: 450px
+	background-color: #f1f1f1
+	box-shadow: 0 3px 17px 3px rgba(0, 0, 0, 0.6)
+	.call-back_form
+		padding: 6.6% 7.7%
+		text-align: center
+		position: relative
+		.icon-close
+			position: absolute
+			top: 2%
+			right: 2%
+			width: 6.22222222222222%
+			height: auto
+			background-size: 100% 100%
+		.call-back__main-text	
+			font-size: 1.71em
+			line-height: 1.15em
+			font-weight: bold
+			text-transform: uppercase
+			color: #000
+			margin-bottom: 2.3%
+		.call-back_content-text
+			font-size: 1.143em
+			line-height: 1.2em
+			color: #393939
+			margin-bottom: 2.3%
+			&:last-of-type
+				margin-bottom: 4.4%
+			span 
+				color: #ed1e26
+				text-decoration: underline
+		form 
+			text-align: left
+			label 
+				position: relative
+				display: inline-block
+				font-size: 1em
+				line-height: 1em 
+				margin-bottom: 5px
+				color: #737373
+				&:before 
+					content: ''
+					position: absolute
+					top: 230%
+					left: 8%
+					width: 14px
+					height: 21px
+					background: url('../img/icon-form-phone.png') no-repeat
+					background-size: 100% 100%
+			input[type="text"]
+				width: 90%
+				margin-bottom: 3.1%
+				border: none
+				outline: none
+				border: 1px solid #c4c4c4
+				font-size: 1.29em
+				line-height: 2.5em
+				padding-left: 10%
+			input[type="submit"]
+				margin-left: 17%
+				width: 66%
+				padding: 0
+				border-radius: 5px
+				border: none
+				outline: none
+				font-size: 1.43em
+				line-height: 2.5em
+				color: #ffffff
+				background-color: #ec1e1e
+//Окно Добавить к заказу
+.add-to-basket
+	position: fixed
+	z-index: 2
+	top: 15%
+	left: 50%
+	transform: translate(-50%)
+	-webkit-transform: translate(-50%)
+	max-width: 572px
+	width: 58%
+	background-color: #f1f1f1
+	box-shadow: 0 3px 17px 3px rgba(0, 0, 0, 0.6)
+	.add-to-backet_container
+		padding: 8.8% 4.4% 
+		text-align: center
+		position: relative
+		.icon-close
+			position: absolute
+			top: 2%
+			right: 2%
+			width: 4.8951048951049%
+			height: auto
+			background-size: 100% 100%
+		.main-text
+			font-size: 1.71em
+			line-height: 1.2em
+			color: #000
+			font-weight: bold
+			text-transform: uppercase
+			margin-bottom: 5.2%
+		.text
+			font-size: 1.143em
+			line-height: 1.1em
+			color: #393939
+			margin-bottom: 5.2%
+		.btn-block
+			.btn-content
+				float: left 
+				width: 48%
+				background-color: #ed1e26
+				border: 1px solid #b31920
+				border-radius: 4px
+				text-decoration: none
+				text-transform: uppercase
+				text-shadow: 0.5px 0.9px 2px rgba(0, 0, 0, 0.44)
+				color: #ffffff
+				font-size: 1.428em
+				line-height: 2.3em
+				font-weight: 500
+			.btn-continue
+				float: right
+				width: 48%
+				background-color: #f1f1f1
+				border: 1px solid #9f9f9f
+				border-radius: 4px
+				text-decoration: none
+				text-transform: uppercase
+				color: #504f4f
+				font-size: 1.428em
+				line-height: 2.3em
+				font-weight: 500
+
+//Страница Акции
+.proposition-page
+	.proposition-page_block
+		background-color: #fff
+		&:nth-child(2)
+			background-color: #f8f8f8
+			padding-top: 4.6%
+	.proposition-page_block-container
+		.proposition-name
+			margin: 3.5% 0 4.6% 1.5%
+			font-size: 1.71em 
+			line-height: 1em
+			color: #000
+		.proposition-page_block-left
+			float: left
+			width: 27%
+			margin-left: 1.5%
+			.proposition-img
+				width: 82%
+				height: auto
+		.proposition-page_block-right
+			float: left
+			width: 60%
+			.proposition-page-name 
+				font-size: 1.285em
+				line-height: 1.333em
+				font-weight: bold
+				padding-bottom: 3.4%
+				color: #000
+				margin-top: 3.4%
+				span 
+					color: #ed1e26
+			.proposition-page-text
+				position: relative
+				&:before
+					content: ''
+					position: absolute
+					width: 100%
+					border-top: 1px solid #a4a4a4
+				p
+					padding-top: 3.4%
+					margin-bottom: 3.4%
+					font-size: 1.143em
+					line-height: 1em
+					font-weight: normal
+					color: #000
+				.text-icon
+					margin-bottom: 0
+					font-size: 1.285em
+					line-height: 1em
+					font-weight: normal
+					color: #000
+				.icon-garant
+					display: inline-block
+					vertical-align: middle
+					width: 18px
+					height: 20px
+					background: url('../img/icon-garant.png') no-repeat
+				.icon-ago
+					display: inline-block
+					vertical-align: middle
+					width: 18px
+					height: 19px
+					background: url('../img/icon-ago.png') no-repeat
+				.list-left,
+				.list-right
+					float: left
+					list-style-type: none
+					li 
+						position: relative
+						font-size: 1em
+						line-height: 1em
+						margin-bottom: 1em
+						color: #656565
+						padding-left: 1.5em
+						&:last-child
+							margin-bottom: 0
+						&:before 
+							content: ''
+							position: absolute
+							top: 4px
+							left: 0
+							width: 13px
+							height: 12px
+							background: url('../img/li.proposition.png') no-repeat
+				.list-left 
+					margin-right: 5.1%
+				.proposition-page-link
+					margin-top: 5.1%
+					margin-bottom: 6.8%
+					display: block
+					width: 39%
+					font-size: 1.143em
+					line-height: 2.5em
+					color: #313131
+					border: 1px solid #c02027
+					border-radius: 2px
+					text-align: center
+					text-transform: uppercase
+					text-decoration: none
+
+.special-price
+	.special-price-container
+		padding: 6.6% 0 8% 0
+	.special-price-name
+		margin-left: 1.5%
+		margin-bottom: 3%
+		font-size: 1.71em 
+		line-height: 1em 
+		color: #000
+	.item_block
+		.item_block__info
+			float: left
+			width: 22.4%
+			border: 1px solid #dfdfdf
+			margin-right: 3.1%
+			&:last-child
+				margin-right: 0 	
+			.item_block__info-img
+				position: relative
+				width: 100%
+				height: auto
+				margin-bottom: 9%
+				&:hover .img-hover
+					display: block
+				&:before
+					content: ''
+					position: absolute
+					top: 0
+					left: 0
+					width: 100%
+					height: 100%
+					background: url('../img/icon-img-proposition.png') no-repeat
+				img 
+					width: 100%
+					height: auto
+				.img-hover
+					display: none
+					position: absolute
+					top: 0
+					left: 0
+					width: 100%
+					height: 100%
+					background: url('../img/img-hover-more.png') no-repeat
+					cursor: pointer
+					background-size: 100% 100%
+			.item_block__info-text
+				padding: 0 15px
+				.item-name
+					font-size: 1.21em
+					line-height: 1em
+					color: #0c78bc
+					padding-bottom: 13%
+					margin-bottom: 13%
+					border-bottom: 1px solid #dfdfdf
+				.item-info
+					font-size: 1em
+					line-height: 1em
+					padding-bottom: 5.3%
+					color: #7b7b7b
+					&:last-of-type
+						padding-bottom: 11%
+					span 
+						color: #000000
+				.buy-block 	
+					width: 100%
+					margin-bottom: 11%
+					img 
+						float: left
+						margin: 0
+						width: 17%
+						height: auto
+						margin-right: 5.3%
+						cursor: pointer
+					p 
+						float: left
+						padding: 0
+						display: inline-block
+						vertical-align: top
+						width: 63%
+						background-color: #fff6c9
+						border-radius: 2px 
+						font-size: 1.143em
+						line-height: 2em
+						color: #000000
+						text-align: center
+//Страница Контакты
+.contacts  
+	background-color: #ffffff
+	.contacts-container
+		padding: 3.5% 0
+		.section-name
+			font-size: 1.71em
+			line-height: 1em
+			font-weight: normal
+			margin-bottom: 5.1%
+			margin-left: 1.5%
+		.contacts_info
+			float: left
+			width: 47%
+			margin-left: 4%
+			.info
+				margin-bottom: 8.7%
+				&:last-child
+					margin-bottom: 0
+				.info_img
+					float: left 
+					width: 8.91304347826087%
+					height: auto
+					margin-right: 4.3%
+				.info_text
+					float: left 
+					.info-name	
+						font-size: 1em 
+						line-height: 1em
+						margin-bottom: 7.8%
+						font-weight: bold
+						color: #000
+					.info-date
+						font-size: 1.1429em
+						line-height: 1em
+						color: #000
+						margin-bottom: 8.9%
+						&:last-of-type
+							margin-bottom: 0
+		.contacts_address
+			float: left
+			width: 46%
+			.map_img
+				float: left
+				width: 9.1%
+				height: auto
+				margin-right: 4.444%
+			.map_text
+				float: left 
+				.map-name
+					font-size: 1em
+					line-height: 1em
+					margin-top: 3.5%
+					margin-bottom: 4.25%
+					font-weight: bold
+					color: #000
+				.map-btn_block
+					float: left 
+					width: 100%
+					margin-bottom: 4.3%
+					.map-btn 
+						float: left 
+						width: 20.9%
+						border: 1px solid #dddddd
+						font-size: 1em 
+						line-height: 2.36em
+						color: #545454
+						font-weight: bold
+						text-align: center
+						text-decoration: none
+						background-color: #efefef
+						margin-right: 2.22%
+						&:last-child
+							margin-right: 0
+				.address 
+					float: left 
+					width: 100%
+					font-size: 1.1429em
+					line-height: 1em
+					color: #000
+					margin-bottom: 4.2%
+				.icon-address
+					display: inline-block
+					vertical-align: middle
+					width: 12px
+					height: 16px
+					margin-right: 8px
+					background: url("../img/icon-location.png") no-repeat
+				.yandex-map_block
+					float: left
+					width: 100%
+					#ymaps1460400482796504130
+						height: 100px
+
+.form-contacts
+	background-color: #f8f8f8
+	.form-contacts-container
+		padding: 4% 0 7%
+		.quest
+			font-size: 1.71em
+			line-height: 1.71em
+			font-weight: bold
+			color: #000
+			margin-bottom: 5%
+		form
+			width: 47.45%//465px
+			.form-column-left
+				float: left
+				width: 27%
+				label
+					display: block
+					margin-bottom: 23.9%
+					padding-top: 6.3%
+					font-size: 1.1429em//16px
+					line-height: 1.25em//20px
+					&:last-child
+						margin-bottom: 0
+			.form-column-right
+				float: right
+				width: 73%
+				input[type="text"],
+				input[type="email"],
+				textarea
+					margin-bottom: 5.9%
+					width: 100%//340px
+					font-size: 1.1429em
+					line-height: 2.0625em
+					border: none
+					outline: none
+					border: 1px solid #c4c4c4
+				textarea
+					height: 38%
+				input[type="submit"]
+					display: inline-block
+					width: 66.17%//225px
+					text-transform: uppercase
+					font-size: 1.1429em//16px
+					line-height: 2.8em//45px
+					background: #ed1e26
+					color: #fff
+					border: none
+					outline: none
+					border-radius: 3px
+//Наши услуги
+.our_services_content
+	padding-top: 3.8%
+	padding-bottom: 11.22%
+//Страница Наши услуги_Доставка и оплата			
+.shipping-and-payment_info
+	float: left
+	width: 68.37% //670px
+	margin: 0
+	margin-left: 3.56% //35px
+	.shipping-and-payment_text
+		margin-bottom: 4.9%
+		font-size: 1em//14px
+		line-height: 1.5em//21px
+		&:last-of-type
+			margin-bottom: 7.5%
+	.shipping-and-payment_delivery-method-head
+		font-size: 1em//14px
+		line-height: 1em//14px
+		font-weight: bold
+		margin-bottom: 4.5%
+	ul
+		margin: 0
+		margin-bottom: 4.5%
+		padding: 0
+		list-style-type: none
+		li
+			font-size: 1em//14px
+			line-height: 1.5em//21px
+	form
+		width: 69.4%//465px
+		.form-column-left
+			float: left
+			width: 27%
+			label
+				display: block
+				margin-bottom: 23.8%
+				padding-top: 6.3%
+				font-size: 1.1429em//16px
+				line-height: 1.25em//20px
+				&:last-child
+					margin-bottom: 0
+		.form-column-right
+			float: right
+			width: 73%
+			input[type="text"],
+			input[type="tel"]
+				margin-bottom: 5.9%
+				width: 100%//340px
+				border: none
+				outline: none
+				padding-left: 2%
+				font-size: 1em
+				line-height: 2.3em
+				border: 1px solid #c4c4c4
+			input[type="submit"]
+				width: 66.17%//225px
+				text-transform: uppercase
+				font-size: 1.1429em//16px
+				line-height: 2.7em//45px
+				background: #ed1e26
+				color: #fff
+				border: none
+				outline: none
+				border-radius: 5px
+//Страница Наши услуги_Комплектации кровли
+.complete-roof  
+	float: left
+	width: 72.8% //670px
+	margin: 0
+	margin-left: 3.56% //35px
+	.complete-roof_text
+		margin-bottom: 4.6%
+		font-size: 1em//14px
+		line-height: 1.5em//21px
+		color: #434343
+		&:last-of-type
+			margin-bottom: 7%
+		span
+			color: #ed1e26
+	.block-complete-roof
+		margin-bottom: 4.5%
+		.block-complete-roof-head
+			background: #f7f7f7
+			border: 1px solid #dddddd
+			.block-complete-roof_header
+				font-size: 1.14em
+				line-height: 1.14em
+				padding: 3% 0% 3% 8.2%
+			.header-1
+				position: relative
+				&:before
+					content: ''
+					position: absolute
+					background-image: url(../img/block-complete-roof-1.png)
+					background-repeat: no-repeat
+					background-size: 100% 100%
+					width: 4.1%
+					height: 40%
+					top: 30%
+					left: 3%
+			.header-2
+				position: relative
+				&:before
+					content: ''
+					position: absolute
+					background-image: url(../img/block-complete-roof-2.png)
+					background-repeat: no-repeat
+					background-size: 100% 100%
+					width: 4.1%
+					height: 40%
+					top: 30%
+					left: 3%
+			.header-3
+				position: relative
+				&:before
+					content: ''
+					position: absolute
+					background-image: url(../img/block-complete-roof-3.png)
+					background-repeat: no-repeat
+					background-size: 100% 100%
+					width: 4.1%
+					height: 40%
+					top: 30%
+					left: 3%
+	.block-complete-roof_column
+		border: 1px solid #dddddd
+		.block-complete-roof_column-1	
+			float: left
+			width: 40%
+			padding-left: 3.1%
+			padding-top: 3%
+			text-align: center
+			img
+				width: 100%
+				height: auto
+			.block-complete-roof-price
+				margin-top: 3%
+				font-size: 1.28em
+				line-height: 1.28em
+				margin-bottom: 4.1%
+				span
+					color: #ed1e26
+			.block-complete-roof_button
+				display: inline-block
+				font-size: 1em
+				line-height: 2.42em
+				text-decoration: none
+				background: #ec1e1e
+				color: #fff
+				width: 53%
+				border-radius: 3px
+				margin-bottom: 5%
+
+		.block-complete-roof_column-2	
+			float: right
+			width: 55%
+			margin-top: 4%
+			.block-complete-roof_surpluses
+				margin-left: 7%
+				padding-bottom: 3%
+				margin-bottom: 5%
+				display: inline-block
+				border-bottom: 1px solid #dddddd
+				vertical-align: middle
+				span
+					color: #ed1e26
+				font-size: 1em
+				line-height: 1.6em
+			ul
+				margin: 0
+				padding: 0
+				padding-left: 10%
+				list-style-image: url(../img/custom-roof_marker.png)
+				li
+					margin-bottom: 2.5%
+					font-size: 1em
+					line-height: 1.6em
+					&:last-of-type
+						margin-bottom: 5%	
+//Страница Наши услуги_Монтаж ЦПЧ
+.cement 
+	float: left
+	width: 72.8% //670px
+	margin: 0
+	margin-left: 3.56% //35px
+	.cement_text
+		margin-bottom: 4%
+		font-size: 1em//14px
+		line-height: 1.5em//21px
+		color: #434343
+//Страница Наши услуги_Монтаж водосточной системы
+.installation-water  
+	float: left
+	width: 72.8% //670px
+	margin: 0
+	margin-left: 3.56% //35px
+	.installation-water_text
+		margin-bottom: 4%
+		font-size: 1em//14px
+		line-height: 1.5em//21px
+		color: #434343
+//Страница Наши услуги_Монтаж керамической черепицы
+.installation-ceramics  
+	float: left
+	width: 72.8% //670px
+	margin: 0
+	margin-left: 3.56% //35px
+	.installation-ceramics_text
+		margin-bottom: 4%
+		font-size: 1em//14px
+		line-height: 1.5em//21px
+		color: #434343
+//Страница Наши услуги_Монтаж системы снегозадержания
+.snow-retention  
+	float: left
+	width: 72.8% //670px
+	margin: 0
+	margin-left: 3.56% //35px
+	.snow-retention_text
+		margin-bottom: 4%
+		font-size: 1em//14px
+		line-height: 1.5em//21px
+		color: #434343
+//Страница Наши услуги_Монтаж софитов
+.soffits  
+	float: left
+	width: 72.8% //670px
+	margin: 0
+	margin-left: 3.56% //35px
+	.soffits_text
+		margin-bottom: 4%
+		font-size: 1em//14px
+		line-height: 1.5em//21px
+		color: #434343
+//Страница Наши услуги_Монтаж утеплителя
+.heater 
+	float: left
+	width: 72.8% //670px
+	margin: 0
+	margin-left: 3.56% //35px
+	.heater_text
+		margin-bottom: 4%
+		font-size: 1em//14px
+		line-height: 1.5em//21px
+		color: #434343
+//Страница Наши услуги_Услуги монтажа
+.installation-services 
+	float: left
+	width: 72.8% //670px
+	margin: 0
+	margin-left: 3.56% //35px
+	.installation-services_text
+		margin-bottom: 4%
+		font-size: 1em//14px
+		line-height: 1.5em//21px
+		color: #434343
+	ol
+		margin: 0
+		padding: 0
+		margin-left: 3%
+		margin-bottom: 7%
+		li
+			margin-bottom: 1%
+			font-size: 1em//14px
+			line-height: 1.5em//21px
+	ul 
+		margin: 0	
+		padding: 0
+		list-style-type: none
+		li 
+			margin-bottom: 2%
+			a 
+				font-size: 1em
+				line-height: 1em
+
+				color: #5471cd 
+//Страница Наши услуги_Реализованные проекты
+.completed-projects 
+	float: left
+	width: 72.8% //670px
+	margin: 0
+	margin-left: 3.56% //35px
+	.completed-projects_text
+		margin-bottom: 4%
+		font-size: 1em//14px
+		line-height: 1.5em//21px
+		color: #434343
+	.block-completed-projects
+		margin-bottom: 4.5%
+		.block-completed-projects-head
+			background: #f7f7f7
+			border: 1px solid #dddddd
+			.icon
+				display: inline-block
+				width: 4%
+				vertical-align: middle
+				margin-right: 1%
+				img
+					width: 100%
+			 		height: auto	
+			.block-completed-projects_header
+				font-size: 1.14em
+				line-height: 1.14em
+				padding: 1.8% 0% 1.8% 3.1%
+				position: relative
+				color: #434343
+		.block-completed-projects-main
+			border: 1px solid #dddddd
+			border-top: none
+			padding-left: 3.1%
+			padding-right: 2.1%
+			padding-bottom: 3%
+			.block-completed-projects_text
+				font-size: 1em
+				line-height: 1.5em
+				color: #000000
+				margin-bottom: 3%
+				padding-top: 2%
+			.completed-projects_img
+				display: inline-block
+				width: 30%
+				margin-right: 2.5%
+				&:last-of-type
+					margin-right: 0
+				img
+					width: 100%
+					height: auto
+//Папка Информация
+.information_content
+	padding-top: 3.8%
+	padding-bottom: 11.22%
+//Страница Информация_Вакансии
+.information-vacancies 
+	float: left
+	width: 72.8% //670px
+	margin: 0
+	margin-left: 3.56% //35px
+	.vacancies_text
+		margin-bottom: 5%
+		font-size: 1em//14px
+		line-height: 1.5em//21px
+		color: #434343
+	.vacancies-block
+		margin-bottom: 3.5%
+		.vacancies-name
+			display: block
+			background: #f7f7f7
+			border: 1px solid #dddddd
+			font-size: 1.14em
+			line-height: 1em
+			padding: 2.5% 4% 2.5% 1.7%
+			color: #434343
+			.vacanicies-name_head
+				float: left
+				width: 50%
+				.vacancies-icon
+					display: inline-block
+					width: 10%
+					vertical-align: middle
+					margin-right: 2%
+					img
+						width: 100%
+				 		height: auto
+		.vacanicies-name_salary
+			float: right
+			line-height: 1.5em
+			width: 50%
+			text-align: right
+			padding-top: 0.5%
+		.vacancies-description
+			padding: 4% 5% 7% 5%
+			border: 1px solid #dddddd
+			border-top: none
+			._description__head
+				font-size: 1.28em
+				line-height: 1em
+				margin-bottom: 2%
+			ul
+				margin-left: 0
+				padding: 0
+				list-style-type: none
+				margin-bottom: 5%
+				li
+					font-size: 1em
+					line-height: 1.5em
+			ol
+				margin-left: 0
+				padding: 0
+				margin-bottom: 5%
+				padding-left: 5%
+				li
+					font-size: 1em
+					line-height: 1.5em
+			._description__text
+				padding-left: 3%
+				margin-bottom: 4%
+				&:last-of-type
+					margin-bottom: 0
+//Страница Информация_О компании
+.information_about-us
+	float: left
+	width: 72.8% //670px
+	margin: 0
+	margin-left: 3.56% //35px
+	color: #434343
+	.about-us_text
+		margin-bottom: 4%
+		font-size: 1em//14px
+		line-height: 1.5em//21px
+		color: #434343
+		span
+			text-decoration: underline
+	ol
+		margin: 0
+		padding-left: 0
+		padding-left: 2%
+		font-weight: bold
+		li
+			padding: 0
+			margin: 0
+			font-size: 1em
+			line-height: 1.5em
+			margin-bottom: 3%
+			color: #434343
+			span
+				font-weight: normal
+	.head_ul
+		margin-bottom: 0.7%
+	ul
+		margin: 0
+		padding: 0
+		padding-left: 2.3%
+		padding-bottom: 5%
+		li
+			font-size: 1em
+			line-height: 1.5em
+	.about-us_producers
+		._producers__icon
+			float: left
+			width: 10%
+			img
+				width: 65%
+				height: auto
+		._producers__text-main
+			float: left
+			width: 90%
+			padding-top: 2%
+			font-size: 1em
+			line-height: 1.5em
+			._producers__text
+				margin-bottom: 5%
+				&:last-of-type
+					margin-bottom: 3%
+			._producers__logotype
+				img
+					width: 100%
+					height: auto
+	.about-us_leaderships
+		padding-top: 7%
+		._leaderships__icon
+			float: left
+			width: 10%
+			img
+				width: 65%
+				height: auto
+		._leaderships__text-main
+			float: left
+			width: 90%
+			padding-top: 2%
+			font-size: 1em
+			line-height: 1.5em
+			._leaderships__text-inline
+				margin-bottom: 4%
+			._leaderships__border
+				padding-bottom: 8%
+				border-bottom: 1px solid #e4e4e4
+				._leaderships__photo
+					float: left
+					width: 17%
+					.photo-size
+						img
+							width: 100%
+							height: auto
+					.leaderships_video
+						text-align: center
+						padding-top: 8%
+						._video__link
+							text-decoration: none
+							color: #515151
+						.icon-video
+							width: 30%
+							img
+								margin-bottom: 8%
+				._leaderships__text
+					float: right
+					width: 77%
+					._leaderships__text-inline
+						background: #f7f7f7
+						padding: 3% 1% 4% 2%
+						border-radius: 3px
+						margin-bottom: 5%
+						p
+							font-size: 1.14em
+							line-height: 1.4em
+							margin-bottom: 3%
+							font-style: italic	
+						span
+							font-size: 0.85em
+							line-height: 1em
+					input[type="button"]
+						font-size: 1em
+						line-height: 2.81em
+						background: #fff
+						color: #2b2a2a
+						outline: none
+						border: 1px solid #c02027
+						border-radius: 3px
+			.about-us_text-inline
+				padding-top: 7%
+				a
+					color: #5471cd
+//Страница Информация_отзывы
+.information-reviews
+	float: left
+	width: 72.8% //670px
+	margin: 0
+	margin-left: 3.56% //35px
+	color: #434343
+	.reviews_text
+		margin-bottom: 4%
+		font-size: 1em//14px
+		line-height: 1.5em//21px
+		color: #434343
+	.reviews_people
+		padding: 4% 1.5% 4% 3%
+		margin-bottom: 4%
+		border: 1px solid #dddddd
+		background: #f7f7f7
+		font-size: 1em
+		line-height: 1.5em
+		.reviews_block__img
+			float: left
+			width: 7%
+			img
+				display: inline-block
+				width: 80%
+				height: auto
+		.reviews_block__text
+			float: right
+			width: 92%
+			text-align: left
+			._block__text-main
+				margin-bottom: 6%
+			._block__text-name
+				width: 100%
+				display: inline-block
+				vertical-align: bottom
+				.icon
+					vertical-align: middle
+					img
+						display: inline-block
+						margin-right: 1%
+						width: 3%
+				span
+					color: #fcb305
+	.reviews-paginator
+		margin: 0
+		padding: 0
+		text-align: center
+		a
+			display: inline-block
+			border: 1px solid #b5b5b5
+			padding: 1% 1.5% 1% 1.5%
+			font-size: 1em
+			line-height: 1em
+			text-decoration: none
+			color: #444444
+			background: #ebebeb
+			margin-right: 0.5%
+		.active
+			background: #ffffff
+//Страница Информация_сертификаты
+.information-certificates
+	float: left
+	width: 72.8% //670px
+	margin: 0
+	margin-left: 3.56% //35px
+	color: #434343
+	.certificates_text
+		margin-bottom: 6%
+		font-size: 1em//14px
+		line-height: 1.5em//21px
+		color: #434343
+	.certificates_photo
+		.certificates_img
+			display: inline-block
+			width: 27%
+			margin-right: 6%
+			margin-bottom: 5%
+			&:nth-of-type(3n)
+				margin-right: 0
+			img
+				width: 100%
+				height: auto
+//Страница Каталог
+.catalog
+	float: left
+	width: 72.8% //670px
+	margin: 0
+	margin-left: 3.56% //35px
+	.catalog_grid
+		width: 100%
+		margin-bottom: 14%
+		.catalog__item
+			float: left
+			width: 47%
+			margin-bottom: 4%
+			&:nth-child(2n+1)
+				margin-right: 6%
+			.catalog__item-img
+				width: 100%
+				height: auto
+				margin-bottom: 5%
+			.catalog__item-name
+				font-size: 1.28em
+				line-height: 1em
+				color: #494949
+				font-weight: 600
+				text-align: center
+
+//Компоненты
+//Стрелки слайдера
+.arrow
+	position: absolute
+	top: 50%
+	margin-top: -27px
+	width: 53px
+	height: 54px
+	cursor: pointer
+//Заголовки
+.soffits,
+.snow-retention, 
+.installation-ceramics, 
+.installation-water, 
+.cement,
+.complete-roof, 
+.shipping-and-payment_info,
+.heater,
+.installation-services,
+.completed-projects,
+.information-vacancies, 
+.information_about-us, 
+.information-reviews, 
+.information-certificates,
+.information .information_content,
+.catalog,
+.category-items
+	.main-inscription
+		display: inline-block
+		font-size: 1.7143em//24px
+		line-height: 1.7143em//24px
+		font-weight: bold
+		margin: 0
+		margin-bottom: 32px
+		padding: 0
+		padding-bottom: 13px
+		position: relative
+		&:after
+			position: absolute
+			content: ''
+			background-image: url(../img/h1.after.png)
+			background-repeat: no-repeat
+			background-size: 100% 100%
+			width: 65%
+			height: 2px
+			bottom: 0
+			left: 0 
+//Вставка видео youtube
+.installation-services, 
+.heater .soffits, 
+.snow-retention, 
+.installation-ceramics,  
+.installation-water, 
+.cement
+	.frame-video
+		position: relative
+		padding-bottom: 45%
+		height: 0
+		overflow: hidden
+		width: 70%
+		margin-left: 15%
+		margin-bottom: 5%
+		border: 0.7em solid #e8e8e8
+		iframe
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+//Верхняя навигация
+.high_navigation
+	background-image: url(../img/nav-high.jpg)
+	background-repeat: no-repeat
+	background-size: 100% 100%
+	ul
+		padding: 3% 0
+		li
+			padding: 0
+			margin: 0
+			display: inline-block
+			color: #8e8e8e
+			font-size: 1em//14px
+			line-height: 1em//14px
+			a
+				color: #5f7ad0
+//картинка всех брендов
+.about-us-img
+	width: 100%
+	height: auto
+	margin-bottom: 7%
+//Список с ссылками
+.information_about-us .li-link
+	padding-left: 0
+	list-style-type: none
+	li 
+		margin-bottom: 2%
+		a
+			color: #5471cd
+//Стандартная форма
+.information
+	form
+		width: 69.4%//465px
+		margin-bottom: 9%
+		.form-column-left
+			float: left
+			width: 27%
+			label
+				display: block
+				margin-bottom: 23.8%
+				padding-top: 6.3%
+				font-size: 1.1429em//16px
+				line-height: 1.25em//20px
+				&:last-child
+					margin-bottom: 0
+		.form-column-right
+			float: right
+			width: 73%
+			input[type="text"],
+			input[type="tel"]
+				margin-bottom: 5.9%
+				width: 100%//340px
+				border: none
+				outline: none
+				padding-left: 2%
+				font-size: 1em
+				line-height: 2.3em
+				border: 1px solid #c4c4c4
+			input[type="submit"]
+				width: 66.17%//225px
+				text-transform: uppercase
+				font-size: 1.1429em//16px
+				line-height: 2.7em//45px
+				background: #ed1e26
+				color: #fff
+				border: none
+				outline: none
+				border-radius: 5px
+//Мобильное боковое меню
+.mobile-navigation
+	display: none
+	float: left
+	width: 100%
+	margin-bottom: 2%	
+	position: relative
+	.first-line-menu,
+	.second-line-menu
+		margin: 0
+		padding: 0
+		list-style-type: none
+		li
+			margin: 0
+			float: left 
+			background: #f6f6f6
+			border-top: 1px solid #eeeeee
+			border-bottom: 1px solid #eeeeee
+			font-size: 1em//14px
+			line-height: 1.5em//21px
+			&:last-child
+				border-right: none
+			a
+				text-decoration: none
+				padding: 5px 5px 5px 5px
+				color: #494949
+				position: relative
+				display: block
+		.block_navigation_color-white
+			background: #fff
+		.active
+			background: #fadf4a
+	.second-line-menu
+		position: absolute
+		z-index: 2
+		top: 100%
+		left: 15px
+		li 
+			float: none
+
+//Левая навигация Наши услуги
+.block-navigation
+	float: left
+	width: 23.47%
+	ul
+		margin: 0
+		padding: 0
+		margin-bottom: 19.57%
+		list-style-type: none
+		li
+			margin: 0
+			background: #f6f6f6
+			border-bottom: 1px solid #eeeeee
+			font-size: 1em//14px
+			line-height: 1.5em//21px
+			&:first-of-type
+				border-top: 1px solid #eeeeee
+			a
+				text-decoration: none
+				padding: 6% 22% 6% 10.3%
+				color: #494949
+				position: relative
+				display: block
+				&:after
+					position: absolute
+					content: ''
+					background-image: url(../img/li.arrow.png)
+					background-repeat: no-repeat
+					width: 8px
+					height: 8px
+					background-size: 100% 100%
+					top: 50%
+					margin-top: -4px
+					right: 10.3%//17px
+		.block_navigation_color-white
+			background: #fff
+		.active
+			background: #fadf4a
+	.block_text
+		color: #8a8a8a
+		font-size: 1em//14px
+		line-height: 1.5em//21px
+		margin-bottom: 8.7%
+		font-style: italic
+		padding-left: 6.79%//15px
+	.block_catalog
+		color: #5471cd
+		font-size: 1em//14px
+		line-height: 1em//14px
+		padding-left: 6.79%//15px
+		display: block
+		margin-bottom: 10.9%
+	.profitable-proposition-link
+		display: block
+		margin-bottom: 17.4%
+		img 
+			width: 100%
+			height: auto
+	.calculation_block
+		text-align: center
+		.calculation-img
+			width: 100%
+			height: auto
+			margin-bottom: 8.7%
+		.calculation-name
+			display: inline-block
+			font-size: 1.071em//15px
+			line-height: 1//15px
+			font-weight: bold
+			color: #333
+			padding-bottom: 4.25%
+			border-bottom: 1px solid #bdbdbd
+			margin-bottom: 4.25%
+		.calculation-link
+			display: block
+			font-size: 0.9286em//13px
+			line-height: 1em//13px
+			color: #8a8a8a
+			text-decoration: none
+
+//Страница Ошибка
+.error
+	text-align: center
+	.error-head
+		font-size: 2.14em
+		line-height: 1em
+		margin-bottom: 4%
+	.error-text
+		font-size: 1.28em
+		line-height: 1.3em
+		color: #585858
+		margin-bottom: 4%
+	input[type="button"]
+		font-size: 1.14em
+		line-height: 2.6em
+		padding: 0% 2% 0% 2%
+		color: #ffffff
+		text-transform: uppercase
+		background: #ed1e26
+		border: none
+		border-radius: 3px
+		margin-bottom: 2%
+	.error-background
+		width: 60%
+		margin: 0 auto
+		img
+			width: 100%
+			height: auto
+//Страница Заказ_оформлен
+.order
+	.order_icon
+		float: left
+		width: 15%
+		text-align: right
+		img
+			width: 60%
+			height: auto
+	.order_text-main
+		float: left
+		width: 80%
+		margin-left: 4%
+		.order_head		
+			font-size: 2.14em
+			line-height: 1em
+			margin-bottom: 4%			
+		.order_text
+			font-size: 1.28em
+			line-height: 1.3em
+			color: #585858		
+			margin-bottom: 4%
+			span
+				color: #ed1e26
+		input[type="button"]
+			font-size: 1.14em
+			line-height: 2.6em
+			padding: 0% 2% 0% 2%
+			color: #ffffff
+			text-transform: uppercase
+			background: #ed1e26
+			border: none
+			border-radius: 3px
+			margin-bottom: 2%
+//Страница Результаты поиска
+.result-search
+	.result-search_icon
+		float: left
+		width: 15%
+		text-align: right
+		img
+			width: 60%
+			height: auto
+	.result-search_text-main
+		float: left
+		width: 80%
+		margin-left: 4%
+		.result-search_head		
+			font-size: 2.14em
+			line-height: 1em
+			margin-bottom: 4%			
+		.result-search_text
+			font-size: 1.28em
+			line-height: 1.3em
+			color: #585858		
+			margin-bottom: 4%
+			a
+				color: #ed1e26
+		input[type="button"]
+			font-size: 1.14em
+			line-height: 2.6em
+			padding: 0% 2% 0% 2%
+			color: #ffffff
+			text-transform: uppercase
+			background: #ed1e26
+			border: none
+			border-radius: 3px
+			margin-bottom: 2%
+//Страница Категорий
+.category
+	.high_navigation
+		li:not(:first-of-type) a
+			color: #8e8e8e
+			text-decoration: none
+			&:hover 
+				text-decoration: underline
+	.category-navigation
+		float: left
+		width: 24%
+		padding: 4% 0
+		.sale-checkbox
+			padding: 5.5% 0 5.5% 5.5%
+			border: 1px solid #c02027
+			input[type="checkbox"] 
+				display: none
+			label 
+	  			font-size: 1em
+	  			line-height: 1.286em
+	  			font-weight: bold
+	  			color: #000
+	  			position: relative
+	  			padding-left: 27px
+		  		&:before 
+		  			content: ''
+		  			position: absolute
+		  			top: 0
+		  			left: 0
+		  			width: 19px
+		  			height: 18px
+		  			background: url('../img/checkbox-off.png') no-repeat
+		.category-name
+			margin: 13% 0
+			padding-left: 2%
+			font-size: 1em
+			line-height: 1em
+			font-weight: bold
+			color: #000
+		.from-to-block
+			padding-left: 2%
+			margin-bottom: 8.5%
+			label 
+				font-size: 0.86em
+				line-height: 1em
+				padding-right: 5px
+				padding-left: 5px
+				&:first-of-type
+					padding-left: 0
+			input[type="text"]
+				width: 22%
+				height: 26px
+				border: none
+				outline: none
+				border: 1px solid #b2b4b5
+				padding-left: 5px
+		.slider-block
+			padding-bottom: 15%
+			border-bottom: 1px solid #b2b4b5
+			.img-slider
+				display: block
+				width: 100%
+				height: auto
+				position: relative
+				&:before,
+				&:after 
+					content: ''
+					position: absolute
+					bottom: -14px
+					width: 9px
+					height: 12px
+				&:before
+					left: -4px
+					background: url('../img/slider-mark.png') no-repeat
+				&:after
+					right: -4px
+					background: url('../img/slider-mark.png') no-repeat
+				img 
+					width: 100%
+					height: auto
+		.checkbox_block
+			padding-bottom: 13%
+			border-bottom: 1px solid #b2b4b5
+		.checkbox-item
+			margin-bottom: 4%
+			&:last-child
+				margin-bottom: 0
+			input[type="checkbox"] 
+				display: none
+			label 
+	  			font-size: 1em
+	  			line-height: 1.25em
+	  			color: #000
+	  			position: relative
+	  			padding-left: 27px
+		  		&:before 
+		  			content: ''
+		  			position: absolute
+		  			top: 0
+		  			left: 0
+		  			width: 19px
+		  			height: 18px
+		  			background: url('../img/checkbox-off.png') no-repeat
+		.profitable-proposition-link
+			display: block
+			margin-top: 8%
+			margin-bottom: 17.4%
+			img 
+				width: 100%
+				height: auto
+		.calculation_block
+			text-align: center
+			.calculation-img
+				width: 100%
+				height: auto
+				margin-bottom: 8.7%
+			.calculation-name
+				display: inline-block
+				font-size: 1.071em//15px
+				line-height: 1//15px
+				font-weight: bold
+				color: #333
+				padding-bottom: 4.25%
+				border-bottom: 1px solid #bdbdbd
+				margin-bottom: 4.25%
+			.calculation-link
+				display: block
+				font-size: 0.9286em//13px
+				line-height: 1em//13px
+				color: #8a8a8a
+				text-decoration: none
+	.category-items
+		float: left
+		margin-left: 3%
+		width: 73%
+		padding: 4% 0 8% 0
+		.sort-block
+			width: 98%
+			background-color: whitesmoke
+			border: 1px solid #e8e8e8
+			padding: 1% 0 1% 1%
+			.sort-text
+				float: left
+				font-size: 0.93em
+				line-height: 20px
+				color: #333
+				margin-right: 3.5%
+			.sort-name
+				float: left
+				font-size: 0.93em
+				line-height: 20px
+				color: black
+				font-weight: bold
+				cursor: pointer
+				margin-right: 3.5%
+				&:last-child
+					margin-right: 0
+				&.active 
+					text-decoration: underline
+			.page-block
+				float: right
+				margin-right: 1.1%
+				width: 27%
+				text-align: right
+				a
+					display: inline-block
+					vertical-align: middle
+					margin-right: 3.5%
+					color: #393a39
+					font-size: 13px
+					line-height: 13px
+					text-decoration: underline
+					&.active 
+						text-align: center
+						background-color: #fff
+						width: 20px 
+						height: 20px
+						color: #c81515
+						line-height: 20px
+						border: 1px solid #c81515
+						text-decoration: none
+					&:last-child
+						margin-right: 0
+					img 
+						width: 21px
+						height: 21px
+		.catalog-sort
+			margin-top: 3.5%
+			margin-bottom: 3%
+			.item_block__info
+				float: left
+				width: 30.5%//220px
+				border: 1px solid #dfdfdf
+				margin-right: 3.5%
+				margin-bottom: 3.5%
+				&:nth-child(3n)
+					margin-right: 0 	
+				.item_block__info-img
+					position: relative
+					width: 100%
+					height: auto
+					&:hover .img-hover
+						display: block
+					// &:before
+					// 	content: ''
+					// 	position: absolute
+					// 	top: 0
+					// 	left: 0
+					// 	width: 100%
+					// 	height: 100%
+					// 	background: url('../img/icon-img-proposition.png') no-repeat
+					img 
+						width: 100%
+						height: auto
+						&:hover .img-hover
+							display: block
+					.img-hover
+						display: none
+						position: absolute
+						top: 0
+						left: 0
+						width: 100%
+						height: 100%
+						background: url('../img/more.hover.png') no-repeat
+						background-size: 100% 100%
+						cursor: pointer
+				.item_block__info-text
+					padding: 0 6.8%
+					.info-main
+						padding: 9% 0
+						font-size: 1.214em
+						line-height: 1em
+						font-weight: bold
+						color: #0c78bc
+						border-bottom: 1px solid #dfdfdf
+					.info-content
+						font-size: 1em
+						line-height: 1em
+						padding: 6.8% 0
+						color: #7b7b7b	
+						&:last-of-type
+							padding-bottom: 15.9%
+						span 
+							color: #000000
+					.buy-block 	
+						width: 100%
+						margin-bottom: 9%
+						img 
+							float: left
+							margin: 0
+							width: 16.84%
+							height: auto
+							margin-right: 5.2%
+							cursor: pointer
+						.buy-price
+							float: left
+							padding: 0
+							width: 63%
+							background-color: #fff6c9
+							border-radius: 2px 
+							font-size: 1.1429em
+							line-height: 2em
+							font-weight: bold
+							color: #000000
+							text-align: center
+		.more-block
+			text-align: center
+			margin-bottom: 6.3%
+			.btn-more
+				display: inline-block
+				font-size: 1.43em
+				line-height: 1em
+				color: #000
+				font-weight: bold
+				text-decoration: none
+				border-bottom: 3px dotted #000
+		.page-catalog-block
+			margin-bottom: 11%
+			.find-items
+				float: left
+				font-size: 12px
+				line-height: 20px
+				color: #454545
+				.find-number
+					color: #000
+					font-weight: bold
+			.page-block
+				float: right
+				width: 27%
+				text-align: right
+				a
+					display: inline-block
+					vertical-align: middle
+					margin-right: 3.5%
+					color: #393a39
+					font-size: 13px
+					line-height: 13px
+					text-decoration: underline
+					&.active 
+						text-align: center
+						background-color: #fff
+						width: 20px 
+						height: 20px
+						color: #c81515
+						line-height: 20px
+						border: 1px solid #c81515
+						text-decoration: none
+					&:last-child
+						margin-right: 0
+					img 
+						width: 21px
+						height: 21px
+		.help-choice
+			border: 3px solid #ddd
+			padding: 4.9% 8% 4.9% 4.9%
+			.help-choice_left
+				float: left
+				width: 68%
+				.help-choice-main
+					font-size: 1.715em
+					line-height: 1em
+					color: #000
+					font-weight: bold
+					margin-bottom: 9.5%
+				.help-choice-black
+					color: #1c1c1c
+					font-size: 1.143em
+					line-height: 1.2em
+					margin-bottom: 9.5%
+				.help-choice-text
+					font-size: 1em
+					line-height: 1.2em
+					color: #6f6d6d
+					margin-bottom: 9.5%
+				.btn-quest
+					display: block
+					width: 43.5%
+					text-align: center
+					background-color: #ec1e1e
+					border: 1px solid #c02027
+					border-radius: 3px
+					font-size: 1.07em	
+					line-height: 2.57em
+					color: #fff
+					text-transform: uppercase
+					text-decoration: none
+			.help-choice_right
+				float: right
+				margin-left: 2%
+				width: 30%
+				margin-top: 5%
+				text-align: right
+				img 
+					display: inline-block
+					max-width: 133px
+					width: 100%
+					height: auto
+
+//ALWAYS END
+@import "media"
+
+//Load Libs SASS
+
